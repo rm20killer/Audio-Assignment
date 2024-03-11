@@ -21,6 +21,7 @@ namespace Unity.FPS.Game
         public float GetRatio() => CurrentHealth / MaxHealth;
         public bool IsCritical() => GetRatio() <= CriticalHealthRatio;
 
+        public string SoundEffect = "Enemy_Damage";
         bool m_IsDead;
 
         void Start()
@@ -50,7 +51,7 @@ namespace Unity.FPS.Game
             float healthBefore = CurrentHealth;
             CurrentHealth -= damage;
             CurrentHealth = Mathf.Clamp(CurrentHealth, 0f, MaxHealth);
-
+            AkSoundEngine.PostEvent(SoundEffect, this.gameObject);
             // call OnDamage action
             float trueDamageAmount = healthBefore - CurrentHealth;
             if (trueDamageAmount > 0f)

@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{B7438D21-61D1-4FA5-8D2D-0A42E89DA0A6}" ShortID="317247040">
+					<ChildrenList>
+						<Event Name="Play_Player_footstep" ID="{F3B4B167-33F7-4994-8FA8-C34E192219B5}">
+							<ChildrenList>
+								<Action Name="" ID="{675FBC0D-6178-4B05-8238-7E3C49689A0D}" ShortID="503020248">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sand" ID="{869C5BBF-2A2B-49F9-9FC1-5D7B0F6F4549}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Damage" ID="{D01FD592-9434-415C-918F-7EB6C57E9B12}">
+							<ChildrenList>
+								<Action Name="" ID="{96524A05-6C2F-40E5-AA9E-3711BE491ACE}" ShortID="350778321">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Damage_taken_1" ID="{A2508AA0-02D9-41FB-A54B-D46D02547B83}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

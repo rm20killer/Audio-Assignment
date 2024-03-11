@@ -4,15 +4,15 @@ using UnityEngine.Events;
 
 namespace Unity.FPS.Gameplay
 {
-    [RequireComponent(typeof(CharacterController), typeof(PlayerInputHandler), typeof(AudioSource))]
+    [RequireComponent(typeof(CharacterController), typeof(PlayerInputHandler))]
     public class PlayerCharacterController : MonoBehaviour
     {
         [Header("References")]
         [Tooltip("Reference to the main camera used for the player")]
         public Camera PlayerCamera;
 
-        [Tooltip("Audio source for footsteps, jump, etc...")]
-        public AudioSource AudioSource;
+        // [Tooltip("Audio source for footsteps, jump, etc...")]
+        // public AudioSource AudioSource;
 
         [Header("General")] [Tooltip("Force applied downward when in the air")]
         public float GravityDownForce = 20f;
@@ -72,14 +72,14 @@ namespace Unity.FPS.Gameplay
         [Tooltip("Amount of footstep sounds played when moving one meter while sprinting")]
         public float FootstepSfxFrequencyWhileSprinting = 1f;
 
-        [Tooltip("Sound played for footsteps")]
-        public AudioClip FootstepSfx;
+        // [Tooltip("Sound played for footsteps")]
+        // public AudioClip FootstepSfx;
 
-        [Tooltip("Sound played when jumping")] public AudioClip JumpSfx;
-        [Tooltip("Sound played when landing")] public AudioClip LandSfx;
+        // [Tooltip("Sound played when jumping")] public AudioClip JumpSfx;
+        // [Tooltip("Sound played when landing")] public AudioClip LandSfx;
 
-        [Tooltip("Sound played when taking damage froma fall")]
-        public AudioClip FallDamageSfx;
+        // [Tooltip("Sound played when taking damage froma fall")]
+        // public AudioClip FallDamageSfx;
 
         [Header("Fall Damage")]
         [Tooltip("Whether the player will recieve damage when hitting the ground at high speed")]
@@ -202,12 +202,13 @@ namespace Unity.FPS.Gameplay
                     m_Health.TakeDamage(dmgFromFall, null);
 
                     // fall damage SFX
-                    AudioSource.PlayOneShot(FallDamageSfx);
+                    // AudioSource.PlayOneShot(FallDamageSfx);
+                    AkSoundEngine.PostEvent("Player_Damage", this.gameObject);
                 }
                 else
                 {
                     // land SFX
-                    AudioSource.PlayOneShot(LandSfx);
+                    // AudioSource.PlayOneShot(LandSfx);
                 }
             }
 
@@ -333,7 +334,7 @@ namespace Unity.FPS.Gameplay
                             CharacterVelocity += Vector3.up * JumpForce;
 
                             // play sound
-                            AudioSource.PlayOneShot(JumpSfx);
+                            // AudioSource.PlayOneShot(JumpSfx);
 
                             // remember last time we jumped because we need to prevent snapping to ground for a short time
                             m_LastTimeJumped = Time.time;
@@ -351,7 +352,8 @@ namespace Unity.FPS.Gameplay
                     if (m_FootstepDistanceCounter >= 1f / chosenFootstepSfxFrequency)
                     {
                         m_FootstepDistanceCounter = 0f;
-                        AudioSource.PlayOneShot(FootstepSfx);
+                        // AudioSource.PlayOneShot(FootstepSfx);
+                        AkSoundEngine.PostEvent("Play_Player_footstep", this.gameObject);
                     }
 
                     // keep track of distance traveled for footsteps sound

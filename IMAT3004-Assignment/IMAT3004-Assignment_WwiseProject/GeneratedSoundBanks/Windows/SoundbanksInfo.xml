@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{A4EF6134-074D-A200-869E-C91E26DC45A6}">
+			<ShortName>Game</ShortName>
+			<Path>Game.bnk</Path>
+			<Media>
+				<File Id="110136579" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand_Footstep_4.wav</ShortName>
+					<CachePath>SFX/Sand_Footstep_4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="425439592" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand_Footstep_3.wav</ShortName>
+					<CachePath>SFX/Sand_Footstep_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="724166258" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Damage_taken_1.wav</ShortName>
+					<CachePath>SFX/Damage_taken_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="910620604" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand_Footstep_5.wav</ShortName>
+					<CachePath>SFX/Sand_Footstep_5_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1724675634" Name="Play_Player_footstep" DurationType="OneShot" DurationMin="0.24657631" DurationMax="0.51423156">
+					<MediaRefs>
+						<MediaRef Id="110136579"/>
+						<MediaRef Id="425439592"/>
+						<MediaRef Id="910620604"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2074073782" Name="Player_Damage" DurationType="OneShot" DurationMin="0.4400965" DurationMax="0.78416276">
+					<MediaRefs>
+						<MediaRef Id="724166258"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{C1528B49-93E2-926D-0A89-CDF455EBBFB2}</FileHash>
+</SoundBanksInfo>

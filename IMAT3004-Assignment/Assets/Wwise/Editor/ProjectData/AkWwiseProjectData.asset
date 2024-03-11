@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584929948777589486
-    List: []
+    m_lastTime: -8584914127968042928
+    List:
+    - name: Game
+      guid: 03007e24e1ee6f44a473792c7a247e62
+      id: 702482391
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6d8dac79ba4cb74eb3bba10d1dda045d
+      - ElementName: Game
+        ObjectType: 7
+        guid: 03007e24e1ee6f44a473792c7a247e62
+      Path: SoundBanks\Default Work Unit\Game
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,65 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584929948778615738
-    List: []
+    m_lastTime: -8584914127967978555
+    List:
+    - name: Play_Player_footstep
+      guid: 67b1b4f3f73394498fa8c34e192219b5
+      id: 1724675634
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Play_Player_footstep
+        ObjectType: 3
+        guid: 67b1b4f3f73394498fa8c34e192219b5
+      Path: Events\Default Work Unit\Player\Play_Player_footstep
+      maxAttenuation: 0
+      maxDuration: 0.51423156
+      minDuration: 0.24657631
+    - name: Player
+      guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      Path: Events\Default Work Unit\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Damage
+      guid: 92d51fd034945c41918f7eb6c57e9b12
+      id: 2074073782
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Player_Damage
+        ObjectType: 3
+        guid: 92d51fd034945c41918f7eb6c57e9b12
+      Path: Events\Default Work Unit\Player\Player_Damage
+      maxAttenuation: 0
+      maxDuration: 0.78416276
+      minDuration: 0.4400965
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +210,7 @@ MonoBehaviour:
     m_lastTime: -8584929948778185123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
