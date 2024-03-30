@@ -9,43 +9,122 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{A4EF6134-074D-A200-869E-C91E26DC45A6}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{F504AD94-D12E-165A-AFAD-BD7BAE4B7B9A}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
+				<File Id="88959328" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal\Metal_Footstep_2.wav</ShortName>
+					<CachePath>SFX/Metal/Metal_Footstep_2_9F909560.wem</CachePath>
+				</File>
 				<File Id="110136579" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sand_Footstep_4.wav</ShortName>
-					<CachePath>SFX/Sand_Footstep_4_10C4C929.wem</CachePath>
+					<CachePath>SFX/Sand_Footstep_4_8CB8A47E.wem</CachePath>
+				</File>
+				<File Id="275477400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal\Metal_Footstep_3.wav</ShortName>
+					<CachePath>SFX/Metal/Metal_Footstep_3_9F909560.wem</CachePath>
+				</File>
+				<File Id="310047732" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Weapon_shots.wav</ShortName>
+					<CachePath>SFX/Weapon_shots_E73B5DB4.wem</CachePath>
+				</File>
+				<File Id="401182583" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Weapon_shot_1.wav</ShortName>
+					<CachePath>SFX/Weapon_shot_1_B923487C.wem</CachePath>
 				</File>
 				<File Id="425439592" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sand_Footstep_3.wav</ShortName>
-					<CachePath>SFX/Sand_Footstep_3_10C4C929.wem</CachePath>
+					<CachePath>SFX/Sand_Footstep_3_6695EE4E.wem</CachePath>
+				</File>
+				<File Id="459738931" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal\Metal_Footstep_1.wav</ShortName>
+					<CachePath>SFX/Metal/Metal_Footstep_1_9F909560.wem</CachePath>
+				</File>
+				<File Id="532477279" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Enemy_Damage_taken.wav</ShortName>
+					<CachePath>SFX/Enemy_Damage_taken_380927DA.wem</CachePath>
+				</File>
+				<File Id="549236246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Weapon_shots.wav</ShortName>
+					<CachePath>SFX/Weapon_shots_E5904475.wem</CachePath>
+				</File>
+				<File Id="553755816" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Weapon_shots.wav</ShortName>
+					<CachePath>SFX/Weapon_shots_9C280C11.wem</CachePath>
 				</File>
 				<File Id="724166258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Damage_taken_1.wav</ShortName>
-					<CachePath>SFX/Damage_taken_1_10C4C929.wem</CachePath>
+					<CachePath>SFX/Damage_taken_1_9F909560.wem</CachePath>
 				</File>
 				<File Id="910620604" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sand_Footstep_5.wav</ShortName>
-					<CachePath>SFX/Sand_Footstep_5_10C4C929.wem</CachePath>
+					<CachePath>SFX/Sand_Footstep_5_25D7179D.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1724675634" Name="Play_Player_footstep" DurationType="OneShot" DurationMin="0.24657631" DurationMax="0.51423156">
+				<Event Id="555067025" Name="Enemy_Damage" DurationType="OneShot" DurationMin="0.15480168" DurationMax="0.15887819">
 					<MediaRefs>
-						<MediaRef Id="110136579"/>
-						<MediaRef Id="425439592"/>
-						<MediaRef Id="910620604"/>
+						<MediaRef Id="532477279"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2074073782" Name="Player_Damage" DurationType="OneShot" DurationMin="0.4400965" DurationMax="0.78416276">
+				<Event Id="1724675634" Name="Play_Player_footstep" DurationType="OneShot" DurationMin="0.24657631" DurationMax="0.51423156">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="88959328"/>
+								<MediaRef Id="275477400"/>
+								<MediaRef Id="459738931"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="803837735" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="110136579"/>
+								<MediaRef Id="425439592"/>
+								<MediaRef Id="910620604"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2074073782" Name="Player_Damage" DurationType="OneShot" DurationMin="0.55448675" DurationMax="0.62239045">
 					<MediaRefs>
 						<MediaRef Id="724166258"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3108093142" Name="Weapon_Charge_buildup" DurationType="OneShot" DurationMin="3.2905047" DurationMax="3.2905047">
+					<MediaRefs>
+						<MediaRef Id="553755816"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2723833262" Name="Weapon_charge_release" DurationType="OneShot" DurationMin="1.063338" DurationMax="1.2285305">
+					<MediaRefs>
+						<MediaRef Id="549236246"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1721627779" Name="Weapon_charge_stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2134580640" Name="Weapon_shot" DurationType="OneShot" DurationMin="0.08567046" DurationMax="0.11435634">
+					<MediaRefs>
+						<MediaRef Id="401182583"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="899494556" Name="Weapon_shot_1" DurationType="OneShot" DurationMin="0.59526116" DurationMax="0.7945783">
+					<MediaRefs>
+						<MediaRef Id="310047732"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="803837735" Name="Sand"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F07CC725-F2A5-8B95-AE00-84C788F1D797}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -55,9 +134,42 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="694692527" Name="VFX"/>
+				<Bus Id="1069431850" Name="Player"/>
+				<Bus Id="1229948536" Name="Environment"/>
+				<Bus Id="1467963052" Name="Weapons"/>
+				<Bus Id="1551306167" Name="UI"/>
+				<Bus Id="2299321487" Name="Enemy"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="803837735" Name="Sand"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1551306167" Type="User" Language="SFX" Hash="{2BDBC5E7-B339-C57A-D121-4237D75A5FAD}">
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<Media>
+				<File Id="737061893" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>Screenshot.wav</ShortName>
+					<Path>Media/737061893.wem</Path>
+					<CachePath>SFX/Screenshot_9F909560.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2183894550" Name="Play_Screenshot" DurationType="OneShot" DurationMin="0.2355965" DurationMax="0.2496058">
+					<MediaRefs>
+						<MediaRef Id="737061893"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C1528B49-93E2-926D-0A89-CDF455EBBFB2}</FileHash>
+	<FileHash>{6856F910-4155-AA81-2986-289B96BDBBD0}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2183894550	Play_Screenshot			\Default Work Unit\UI\Play_Screenshot	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	737061893	Screenshot	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Screenshot_9D0E2A85.wem	737061893.wem	\Actor-Mixer Hierarchy\Default Work Unit\UI\Screenshot	
+

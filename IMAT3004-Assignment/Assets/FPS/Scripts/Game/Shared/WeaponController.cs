@@ -31,6 +31,9 @@ namespace Unity.FPS.Game
         [Header("Information")] [Tooltip("The name that will be displayed in the UI for this weapon")]
         public string WeaponName;
 
+        [Tooltip("Weapon fire sound effects")]
+        public string FireSFX = "Weapon_charge_release";
+        
         [Tooltip("The image that will be displayed in the UI for this weapon")]
         public Sprite WeaponIcon;
 
@@ -149,7 +152,7 @@ namespace Unity.FPS.Game
         const string k_AnimAttackParameter = "Attack";
 
         private Queue<Rigidbody> m_PhysicalAmmoPool;
-
+        
         void Awake()
         {
             m_CurrentAmmo = MaxAmmo;
@@ -324,6 +327,7 @@ namespace Unity.FPS.Game
                     // Check if we released charge or if the weapon shoot autmatically when it's fully charged
                     if (inputUp || (AutomaticReleaseOnCharged && CurrentCharge >= 1f))
                     {
+                        AkSoundEngine.PostEvent("Weapon_charge_stop", gameObject);
                         return TryReleaseCharge();
                     }
 
@@ -359,10 +363,10 @@ namespace Unity.FPS.Game
 
                 LastChargeTriggerTimestamp = Time.time;
                 IsCharging = true;
-
+                // AkSoundEngine.PostEvent("Weapon_Charge_buildup", gameObject);
                 return true;
             }
-
+            // AkSoundEngine.PostEvent("Weapon_charge_stop", gameObject);
             return false;
         }
 
@@ -423,7 +427,7 @@ namespace Unity.FPS.Game
             {
                 WeaponAnimator.SetTrigger(k_AnimAttackParameter);
             }
-
+            AkSoundEngine.PostEvent(FireSFX, gameObject);
             OnShoot?.Invoke();
             OnShootProcessed?.Invoke();
         }

@@ -13,19 +13,49 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENEMY_DAMAGE = 555067025U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEP = 1724675634U;
+        static const AkUniqueID PLAY_SCREENSHOT = 2183894550U;
         static const AkUniqueID PLAYER_DAMAGE = 2074073782U;
+        static const AkUniqueID WEAPON_CHARGE_BUILDUP = 3108093142U;
+        static const AkUniqueID WEAPON_CHARGE_RELEASE = 2723833262U;
+        static const AkUniqueID WEAPON_CHARGE_STOP = 1721627779U;
+        static const AkUniqueID WEAPON_SHOT = 2134580640U;
+        static const AkUniqueID WEAPON_SHOT_1 = 899494556U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 2385628198U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID SAND = 803837735U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID GAME = 702482391U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID ENEMY = 2299321487U;
+        static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID UI = 1551306167U;
+        static const AkUniqueID VFX = 694692527U;
+        static const AkUniqueID WEAPONS = 1467963052U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -7,10 +7,10 @@
 					<ChildrenList>
 						<Event Name="Play_Player_footstep" ID="{F3B4B167-33F7-4994-8FA8-C34E192219B5}">
 							<ChildrenList>
-								<Action Name="" ID="{675FBC0D-6178-4B05-8238-7E3C49689A0D}" ShortID="503020248">
+								<Action Name="" ID="{6E0F7FE2-F80D-41BB-8D00-4B79EA5E3406}" ShortID="695401795">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Sand" ID="{869C5BBF-2A2B-49F9-9FC1-5D7B0F6F4549}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+											<ObjectRef Name="Footsteps" ID="{540524BE-7620-4775-B90E-711EB28E5FE9}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -22,6 +22,108 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Damage_taken_1" ID="{A2508AA0-02D9-41FB-A54B-D46D02547B83}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Weapon" ID="{BADB4DEF-94BD-4AB7-A0AB-1CD9945D5CE9}" ShortID="496110749">
+							<ChildrenList>
+								<Event Name="Weapon_Charge_buildup" ID="{1361214C-416B-4F89-81C3-FFA647B1E954}">
+									<ChildrenList>
+										<Action Name="" ID="{FFF9F5ED-A5D1-4E98-943E-D10012387F7D}" ShortID="89638815">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_Charge" ID="{7DAD6EB7-BA54-447F-A4CE-2B628B93D125}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Weapon_charge_release" ID="{199E5920-C5BB-43CD-AC57-05DE28F8F5B1}">
+									<ChildrenList>
+										<Action Name="" ID="{AAA155C5-8B94-4CE3-89B6-22FFDEC2721F}" ShortID="928296506">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_Charge" ID="{7DAD6EB7-BA54-447F-A4CE-2B628B93D125}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FBC5FCA0-5572-417D-9630-B88CA40E60F2}" ShortID="997932195">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_Release_Charge" ID="{977E9296-E415-4B2F-9852-4DB3E9B20480}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Weapon_charge_stop" ID="{32F64AE5-2751-4C0A-8DF5-C6F41D7BB4EE}">
+									<ChildrenList>
+										<Action Name="" ID="{C919047B-73F8-40A9-89D6-FE61B4C33369}" ShortID="562685225">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_Charge" ID="{7DAD6EB7-BA54-447F-A4CE-2B628B93D125}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Weapon_shot" ID="{D74A8740-67DD-4FAA-91DD-0F2A0B9B2030}">
+									<ChildrenList>
+										<Action Name="" ID="{5FD70928-1DF3-47CF-BC72-DA5B450C60D9}" ShortID="1058018600">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_shots" ID="{E37D407C-CCBB-4F6D-8C26-5980F1A77DE9}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Weapon_shot_1" ID="{AB92908B-AED8-42BD-9FFD-665997ECE02E}">
+									<ChildrenList>
+										<Action Name="" ID="{AE11DBF3-ED20-4520-8DF6-DB05CAE15859}" ShortID="119903759">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_shots_01" ID="{6EDFD2B4-D85B-48D0-B44A-E4916A8343B9}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{8D73E353-4C0D-4F01-BBD3-DE2EB78561E0}" ShortID="177888207">
+					<ChildrenList>
+						<Event Name="Play_Screenshot" ID="{43CFEDA6-FD82-455B-9EC6-EC2FDD76291D}">
+							<ChildrenList>
+								<Action Name="" ID="{13CA72E4-FDDF-468E-B02F-2EDEF4D05209}" ShortID="599842051">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Screenshot" ID="{FEC5E510-9DFD-4F95-8C32-CB98A1849E68}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemy" ID="{81B79E26-C43B-40A9-9CEB-C59ED16D2D4B}" ShortID="925986052">
+					<ChildrenList>
+						<Event Name="Enemy_Damage" ID="{19EFD826-D845-40CC-A2B8-9721714CE620}">
+							<ChildrenList>
+								<Action Name="" ID="{6B317CBC-4FC8-4C62-AD53-69262EC829E1}" ShortID="199264403">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Enemy_Damage_taken" ID="{150A18CE-4710-4AE7-8FF6-AC8BFBC3207D}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

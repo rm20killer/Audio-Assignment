@@ -60,6 +60,7 @@ namespace Unity.FPS.UI
 
             if (m_TakeScreenshot)
             {
+                AkSoundEngine.PostEvent("Play_Screenshot", gameObject);
                 m_MenuCanvas.alpha = 0;
                 ScreenCapture.CaptureScreenshot(GetPath());
                 m_TakeScreenshot = false;
