@@ -7,7 +7,7 @@ public class Footstep_change : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.StartsWith("MetalPlatform"))
+        if (other.gameObject.name.StartsWith("MetalPlatform") || other.gameObject.name.StartsWith("CrashedShip"))
         {
             AkSoundEngine.SetSwitch("Footsteps", "Metal", gameObject);
         }
@@ -15,7 +15,7 @@ public class Footstep_change : MonoBehaviour
     
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name.StartsWith("MetalPlatform"))
+        if (other.gameObject.name.StartsWith("MetalPlatform") || other.gameObject.name.StartsWith("CrashedShip"))
         {
             AkSoundEngine.SetSwitch("Footsteps", "Sand", gameObject);
         }

@@ -197,7 +197,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584897684447315126
+    m_lastTime: -8584894541959959169
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -239,8 +239,74 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584897681056639568
+    m_lastTime: -8584894545781487114
     List:
+    - name: Drone
+      guid: ee75738a445d184d8ff337051e1ca761
+      id: 2739838641
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 269eb7813bc4a9409cebc59ed16d2d4b
+      - ElementName: Drone
+        ObjectType: 4
+        guid: ee75738a445d184d8ff337051e1ca761
+      Path: Events\Default Work Unit\Enemy\Drone
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Drone_death
+      guid: 11010d35bacd604b9d2d68e28c0a04b2
+      id: 3879926930
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 269eb7813bc4a9409cebc59ed16d2d4b
+      - ElementName: Drone
+        ObjectType: 4
+        guid: ee75738a445d184d8ff337051e1ca761
+      - ElementName: Drone_death
+        ObjectType: 3
+        guid: 11010d35bacd604b9d2d68e28c0a04b2
+      Path: Events\Default Work Unit\Enemy\Drone\Drone_death
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Drone_hover_loop
+      guid: 6f4bbc168846de489142087dd29c6aec
+      id: 851403683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 269eb7813bc4a9409cebc59ed16d2d4b
+      - ElementName: Drone
+        ObjectType: 4
+        guid: ee75738a445d184d8ff337051e1ca761
+      - ElementName: Drone_hover_loop
+        ObjectType: 3
+        guid: 6f4bbc168846de489142087dd29c6aec
+      Path: Events\Default Work Unit\Enemy\Drone\Drone_hover_loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Enemy
       guid: 269eb7813bc4a9409cebc59ed16d2d4b
       id: 2299321487
@@ -278,6 +344,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.15887819
       minDuration: 0.15480168
+    - name: Env
+      guid: 459dcc7af74a604f83b898aee23ef4f0
+      id: 529726550
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Env
+        ObjectType: 4
+        guid: 459dcc7af74a604f83b898aee23ef4f0
+      Path: Events\Default Work Unit\Env
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fire
+      guid: 9e65d071f5a1a84fb6a6dccfbc5fdfe1
+      id: 2678880713
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Env
+        ObjectType: 4
+        guid: 459dcc7af74a604f83b898aee23ef4f0
+      - ElementName: Fire
+        ObjectType: 4
+        guid: 9e65d071f5a1a84fb6a6dccfbc5fdfe1
+      Path: Events\Default Work Unit\Env\Fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_GasLeak
+      guid: 53c682f614af464086f7ed5ef9e0b8ac
+      id: 1632583748
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Env
+        ObjectType: 4
+        guid: 459dcc7af74a604f83b898aee23ef4f0
+      - ElementName: Fire
+        ObjectType: 4
+        guid: 9e65d071f5a1a84fb6a6dccfbc5fdfe1
+      - ElementName: Play_GasLeak
+        ObjectType: 3
+        guid: 53c682f614af464086f7ed5ef9e0b8ac
+      Path: Events\Default Work Unit\Env\Fire\Play_GasLeak
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Player_footstep
       guid: 67b1b4f3f73394498fa8c34e192219b5
       id: 1724675634
@@ -614,7 +740,7 @@ MonoBehaviour:
     m_lastTime: -8584929948778185123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0a0000000b0000000c0000000d000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d000000190000001b0000001f00000020000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

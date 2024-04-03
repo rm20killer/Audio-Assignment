@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{F504AD94-D12E-165A-AFAD-BD7BAE4B7B9A}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{34BE56F0-91D6-78B4-FD1D-64CBFD9E32D1}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
@@ -27,11 +27,11 @@
 				</File>
 				<File Id="310047732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
-					<CachePath>SFX/Weapon_shots_E73B5DB4.wem</CachePath>
+					<CachePath>SFX/Weapon_shots_31C3932F.wem</CachePath>
 				</File>
 				<File Id="401182583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shot_1.wav</ShortName>
-					<CachePath>SFX/Weapon_shot_1_B923487C.wem</CachePath>
+					<CachePath>SFX/Weapon_shot_1_A65ED1F3.wem</CachePath>
 				</File>
 				<File Id="425439592" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sand_Footstep_3.wav</ShortName>
@@ -43,7 +43,7 @@
 				</File>
 				<File Id="532477279" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Enemy_Damage_taken.wav</ShortName>
-					<CachePath>SFX/Enemy_Damage_taken_380927DA.wem</CachePath>
+					<CachePath>SFX/Enemy_Damage_taken_51BD11F7.wem</CachePath>
 				</File>
 				<File Id="549236246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
@@ -53,6 +53,10 @@
 					<ShortName>Weapon_shots.wav</ShortName>
 					<CachePath>SFX/Weapon_shots_9C280C11.wem</CachePath>
 				</File>
+				<File Id="559817330" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GasFire.wav</ShortName>
+					<CachePath>SFX/GasFire_5490497B.wem</CachePath>
+				</File>
 				<File Id="724166258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Damage_taken_1.wav</ShortName>
 					<CachePath>SFX/Damage_taken_1_9F909560.wem</CachePath>
@@ -61,11 +65,26 @@
 					<ShortName>Sand_Footstep_5.wav</ShortName>
 					<CachePath>SFX/Sand_Footstep_5_25D7179D.wem</CachePath>
 				</File>
+				<File Id="1071062885" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drone_hoover.wav</ShortName>
+					<CachePath>SFX/Drone_hoover_7F4B14AA.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="3879926930" Name="Drone_death" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="851403683" Name="Drone_hover_loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1071062885"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="555067025" Name="Enemy_Damage" DurationType="OneShot" DurationMin="0.15480168" DurationMax="0.15887819">
 					<MediaRefs>
 						<MediaRef Id="532477279"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1632583748" Name="Play_GasLeak" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="559817330"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1724675634" Name="Play_Player_footstep" DurationType="OneShot" DurationMin="0.24657631" DurationMax="0.51423156">
@@ -171,5 +190,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6856F910-4155-AA81-2986-289B96BDBBD0}</FileHash>
+	<FileHash>{F58A65E5-F392-AB4D-72A0-FF2D3ED4B80C}</FileHash>
 </SoundBanksInfo>

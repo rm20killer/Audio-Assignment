@@ -8,8 +8,11 @@
 						<ObjectRef Name="Player_Damage" ID="{D01FD592-9434-415C-918F-7EB6C57E9B12}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Weapon_shot_1" ID="{AB92908B-AED8-42BD-9FFD-665997ECE02E}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Weapon_charge_release" ID="{199E5920-C5BB-43CD-AC57-05DE28F8F5B1}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Drone_hover_loop" ID="{16BC4B6F-4688-48DE-9142-087DD29C6AEC}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_footstep" ID="{F3B4B167-33F7-4994-8FA8-C34E192219B5}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GasFire" ID="{9E0D23DA-8EC2-49AD-BBC5-458E94129036}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enemy_Damage_taken" ID="{150A18CE-4710-4AE7-8FF6-AC8BFBC3207D}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Drone_death" ID="{350D0111-CDBA-4B60-9D2D-68E28C0A04B2}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Weapon_charge_stop" ID="{32F64AE5-2751-4C0A-8DF5-C6F41D7BB4EE}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Weapon_Charge_buildup" ID="{1361214C-416B-4F89-81C3-FFA647B1E954}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Weapon_shot" ID="{D74A8740-67DD-4FAA-91DD-0F2A0B9B2030}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>

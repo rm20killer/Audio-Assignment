@@ -1,12 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
 	555067025	Enemy_Damage			\Default Work Unit\Enemy\Enemy_Damage	
+	851403683	Drone_hover_loop			\Default Work Unit\Enemy\Drone\Drone_hover_loop	
 	899494556	Weapon_shot_1			\Default Work Unit\Player\Weapon\Weapon_shot_1	
+	1632583748	Play_GasLeak			\Default Work Unit\Env\Fire\Play_GasLeak	
 	1721627779	Weapon_charge_stop			\Default Work Unit\Player\Weapon\Weapon_charge_stop	
 	1724675634	Play_Player_footstep			\Default Work Unit\Player\Play_Player_footstep	
 	2074073782	Player_Damage			\Default Work Unit\Player\Player_Damage	
 	2134580640	Weapon_shot			\Default Work Unit\Player\Weapon\Weapon_shot	
 	2723833262	Weapon_charge_release			\Default Work Unit\Player\Weapon\Weapon_charge_release	
 	3108093142	Weapon_Charge_buildup			\Default Work Unit\Player\Weapon\Weapon_Charge_buildup	
+	3879926930	Drone_death			\Default Work Unit\Enemy\Drone\Drone_death	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
@@ -19,13 +22,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	88959328	Metal_Footstep_2	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Metal\Metal_Footstep_2_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Metal\Metal_Footstep_2		32428
 	110136579	Sand_Footstep_4	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Sand_Footstep_4_8CB8A47E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Sand\Sand_Footstep_4		36352
 	275477400	Metal_Footstep_3	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Metal\Metal_Footstep_3_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Metal\Metal_Footstep_3		26224
-	310047732	Weapon_shots_01	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Weapon_shots_E73B5DB4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Weapon_shots_01		121412
-	401182583	Weapon_shots	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Weapon_shot_1_B923487C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Weapon_shots		17556
+	310047732	Weapon_shots_01	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Weapon_shots_31C3932F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Weapon_shots_01		121412
+	401182583	Weapon_shots	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Weapon_shot_1_A65ED1F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Weapon_shots		17556
 	425439592	Sand_Footstep_3	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Sand_Footstep_3_6695EE4E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Sand\Sand_Footstep_3		26216
 	459738931	Metal_Footstep_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Metal\Metal_Footstep_1_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Metal\Metal_Footstep_1		33408
-	532477279	Enemy_Damage_taken	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Enemy_Damage_taken_380927DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Damage\Enemy_Damage_taken		30160
+	532477279	Enemy_Damage_taken	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Enemy_Damage_taken_51BD11F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Damage\Enemy_Damage_taken		30160
 	549236246	Weapon_Release_Charge	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Weapon_shots_E5904475.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_Release_Charge		193168
 	553755816	Weapon_Charge	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Weapon_shots_9C280C11.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_Charge		421276
+	559817330	GasFire	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\GasFire_5490497B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Env\Fire\GasFire		53240
 	724166258	Damage_taken_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Damage_taken_1_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Damage\Damage_taken_1		75288
 	910620604	Sand_Footstep_5	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Sand_Footstep_5_25D7179D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Sand\Sand_Footstep_5		39860
+	1071062885	Drone_hoover	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Windows\SFX\Drone_hoover_7F4B14AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Drone\Drone_hoover		72336
 

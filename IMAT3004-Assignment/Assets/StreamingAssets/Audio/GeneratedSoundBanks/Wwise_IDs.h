@@ -13,7 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DRONE_DEATH = 3879926930U;
+        static const AkUniqueID DRONE_HOVER_LOOP = 851403683U;
         static const AkUniqueID ENEMY_DAMAGE = 555067025U;
+        static const AkUniqueID PLAY_GASLEAK = 1632583748U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEP = 1724675634U;
         static const AkUniqueID PLAY_SCREENSHOT = 2183894550U;
         static const AkUniqueID PLAYER_DAMAGE = 2074073782U;

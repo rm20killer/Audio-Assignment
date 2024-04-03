@@ -16,7 +16,7 @@
 											<ObjectRef Name="Sand" ID="{623114DF-488C-4796-90F1-863788032FB8}" WorkUnitID="{CD8432BE-7346-41B2-A1D8-0AA98E006A69}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+											<ObjectRef Name="Player" ID="{D760F3D8-E42F-4E8B-8A9E-E60B4785B04E}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Footsteps" ID="{6EE2E250-88DE-4801-BA5A-C3D581FCACE3}" WorkUnitID="{CD8432BE-7346-41B2-A1D8-0AA98E006A69}"/>
@@ -661,6 +661,120 @@
 									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Enemy_Damage_taken" ID="{E5AD1AA1-FC60-450A-9B4E-D17D185032C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Drone" ID="{885F9861-1D76-4407-AE65-D4647DB055B6}" ShortID="1041426229">
+							<ChildrenList>
+								<Sound Name="Drone_hoover" ID="{B79E7758-B9F6-4B1B-86EE-82E6B24ED224}" ShortID="439499397">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E66C8A62-1F2A-4F4F-B6B8-F3206D4B9253}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Enemy" ID="{22915E3D-972D-4D61-9060-A67254EE966E}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Drone_hoover" ID="{DFC57ECE-AB3E-44FA-97C5-DB995B26AF0C}">
+											<Language>SFX</Language>
+											<AudioFile>Drone_hoover.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1071062885"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{4AD69B52-2EAA-40BF-A019-E80F6FB124FF}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Drone_hoover" ID="{DFC57ECE-AB3E-44FA-97C5-DB995B26AF0C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Env" ID="{4928B6D9-F73D-49FA-94A9-592104E1B8C3}" ShortID="410394307">
+					<ChildrenList>
+						<Folder Name="Fire" ID="{C8101312-5FA0-43B9-823A-E74128E679CE}" ShortID="253914572">
+							<ChildrenList>
+								<Sound Name="GasFire" ID="{9E0D23DA-8EC2-49AD-BBC5-458E94129036}" ShortID="570684562">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environment" ID="{E78657E4-A539-4B23-ABF6-92FB706C0D17}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GasFire" ID="{6C5AF03F-42A7-4C8B-BA67-14234EC24E20}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.126373"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.3408168"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>GasFire.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="559817330"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GasFire" ID="{6C5AF03F-42A7-4C8B-BA67-14234EC24E20}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

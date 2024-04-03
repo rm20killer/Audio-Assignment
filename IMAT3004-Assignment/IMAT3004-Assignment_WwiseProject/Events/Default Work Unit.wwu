@@ -129,6 +129,41 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Drone" ID="{8A7375EE-5D44-4D18-8FF3-37051E1CA761}" ShortID="581035657">
+							<ChildrenList>
+								<Event Name="Drone_hover_loop" ID="{16BC4B6F-4688-48DE-9142-087DD29C6AEC}">
+									<ChildrenList>
+										<Action Name="" ID="{5F4E9339-DCAC-45C7-AE7E-0D226E5789AD}" ShortID="617293028">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Drone_hoover" ID="{B79E7758-B9F6-4B1B-86EE-82E6B24ED224}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Drone_death" ID="{350D0111-CDBA-4B60-9D2D-68E28C0A04B2}"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Env" ID="{7ACC9D45-4AF7-4F60-83B8-98AEE23EF4F0}" ShortID="567911140">
+					<ChildrenList>
+						<Folder Name="Fire" ID="{71D0659E-A1F5-4FA8-B6A6-DCCFBC5FDFE1}" ShortID="572319257">
+							<ChildrenList>
+								<Event Name="Play_GasLeak" ID="{F682C653-AF14-4046-86F7-ED5EF9E0B8AC}">
+									<ChildrenList>
+										<Action Name="" ID="{372FC4AF-7741-4B77-B810-3907DF12CBA9}" ShortID="341508345">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GasFire" ID="{9E0D23DA-8EC2-49AD-BBC5-458E94129036}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
