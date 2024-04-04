@@ -6,6 +6,7 @@
 				<SoundBank Name="Game" ID="{247E0003-EEE1-446F-A473-792C7A247E62}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Player_Damage" ID="{D01FD592-9434-415C-918F-7EB6C57E9B12}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Weapon_cooldown" ID="{0B1EFCA1-7463-4275-BDF5-551332B58632}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Weapon_shot_1" ID="{AB92908B-AED8-42BD-9FFD-665997ECE02E}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Weapon_charge_release" ID="{199E5920-C5BB-43CD-AC57-05DE28F8F5B1}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Drone_hover_loop" ID="{16BC4B6F-4688-48DE-9142-087DD29C6AEC}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>

@@ -197,7 +197,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584894541959959169
+    m_lastTime: -8584893687465950666
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -239,7 +239,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584894545781487114
+    m_lastTime: -8584893687466038470
     List:
     - name: Drone
       guid: ee75738a445d184d8ff337051e1ca761
@@ -587,6 +587,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Weapon_cooldown
+      guid: a1fc1e0b63747542bdf5551332b58632
+      id: 464717451
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Weapon_cooldown
+        ObjectType: 3
+        guid: a1fc1e0b63747542bdf5551332b58632
+      Path: Events\Default Work Unit\Player\Weapon\Weapon_cooldown
+      maxAttenuation: 0
+      maxDuration: 1.4723412
+      minDuration: 1.4723412
     - name: Weapon_shot
       guid: 40874ad7dd67aa4f91dd0f2a0b9b2030
       id: 2134580640
@@ -645,8 +668,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 312d4355cd6db443a8f51e2fc767a94f
     GuidInternal: 
-    m_lastTime: -8584929948777375110
-    List: []
+    m_lastTime: -8584893687465863535
+    List:
+    - name: IsPlaying
+      guid: 6df689226358e140bd29b38be02c957c
+      id: 728654205
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 312d4355cd6db443a8f51e2fc767a94f
+      - ElementName: IsPlaying
+        ObjectType: 13
+        guid: 6df689226358e140bd29b38be02c957c
+      Path: Game Parameters\Default Work Unit\IsPlaying
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -740,7 +777,7 @@ MonoBehaviour:
     m_lastTime: -8584929948778185123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d000000190000001b0000001f00000020000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d000000190000001b0000001f000000200000002100000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

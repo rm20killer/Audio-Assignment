@@ -448,6 +448,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5960346955183252710, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9087143436424816424, guid: 25a1b0efadb966e44889fce712c8ff8d,
         type: 3}
       propertyPath: AttackEyeColor.b
@@ -739,6 +744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960346955183252710, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087143436424816424, guid: 25a1b0efadb966e44889fce712c8ff8d,
         type: 3}
@@ -1039,6 +1049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960346955183252710, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087143436424816424, guid: 25a1b0efadb966e44889fce712c8ff8d,
         type: 3}
@@ -2430,6 +2445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: aimingPivotVerticalOffset
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845811686799571066, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087143436424816424, guid: e29d43f43cc5d82499dd9926e01847d3,
         type: 3}
@@ -4376,6 +4396,11 @@ PrefabInstance:
       propertyPath: aimingPivotVerticalOffset
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7845811686799571066, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9087143436424816424, guid: e29d43f43cc5d82499dd9926e01847d3,
         type: 3}
       propertyPath: dropRate
@@ -4797,6 +4822,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CriticalHealthRatio
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845811686799571066, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9087143436424816424, guid: e29d43f43cc5d82499dd9926e01847d3,
         type: 3}

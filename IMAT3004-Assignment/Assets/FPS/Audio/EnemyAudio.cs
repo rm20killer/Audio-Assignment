@@ -13,6 +13,6 @@ public class EnemyAudio : MonoBehaviour
     void OnDestroy()
     {
         AkSoundEngine.StopAll(gameObject);
-        AkSoundEngine.PostEvent("Drone_hover_stop", gameObject);
+        // AkSoundEngine.PostEvent("Drone_hover_stop", gameObject);
     }
 }

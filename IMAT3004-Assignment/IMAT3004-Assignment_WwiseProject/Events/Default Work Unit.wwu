@@ -97,6 +97,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Weapon_cooldown" ID="{0B1EFCA1-7463-4275-BDF5-551332B58632}">
+									<ChildrenList>
+										<Action Name="" ID="{D63DD36E-0B3E-41AE-A393-54AF8515365D}" ShortID="1012156106">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="minigun_overheat" ID="{67C3B198-0F2F-4E15-AB44-D49758941EFC}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

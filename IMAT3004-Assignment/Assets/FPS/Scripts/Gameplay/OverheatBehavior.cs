@@ -68,7 +68,7 @@ namespace Unity.FPS.Gameplay
             DebugUtility.HandleErrorIfNullGetComponent<WeaponController, OverheatBehavior>(m_Weapon, this, gameObject);
 
         }
-
+        bool playingSound = false;
         void Update()
         {
             // visual smoke shooting out of the gun
@@ -87,26 +87,46 @@ namespace Unity.FPS.Gameplay
             }
 
             // cooling sound
-            if (CoolingCellsSound)
+            if (true)
             {
-                if (!m_AudioSource.isPlaying
+                if (!playingSound
                     && currentAmmoRatio != 1
                     && m_Weapon.IsWeaponActive
                     && m_Weapon.IsCooling)
-                {
-                    m_AudioSource.Play();
+                { 
+                    playSound();
+                    // m_AudioSource.Play();
                 }
-                else if (m_AudioSource.isPlaying
+                else if (playingSound
                          && (currentAmmoRatio == 1 || !m_Weapon.IsWeaponActive || !m_Weapon.IsCooling))
                 {
-                    m_AudioSource.Stop();
+                    stopSound();
+                    // AkSoundEngine.StopAll( gameObject); 
+                    // m_AudioSource.Stop();
                     return;
                 }
 
-                m_AudioSource.volume = AmmoToVolumeRatioCurve.Evaluate(1 - currentAmmoRatio);
+                // m_AudioSource.volume = AmmoToVolumeRatioCurve.Evaluate(1 - currentAmmoRatio);
             }
 
             m_LastAmmoRatio = currentAmmoRatio;
         }
+        
+        void playSound()
+        {
+            Debug.Log("Playing sound");
+            playingSound = true;
+            AkSoundEngine.PostEvent("Weapon_cooldown", gameObject);
+            //set playingSound to false after 1.5 second
+            Invoke("stopSound", 1.5f);
+        }
+        
+        void stopSound()
+        {
+            playingSound = false;
+            AkSoundEngine.StopAll(gameObject);
+        }
+        
+        
     }
 }

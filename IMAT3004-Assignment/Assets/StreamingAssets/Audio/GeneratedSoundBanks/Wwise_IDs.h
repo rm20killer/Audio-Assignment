@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID WEAPON_CHARGE_BUILDUP = 3108093142U;
         static const AkUniqueID WEAPON_CHARGE_RELEASE = 2723833262U;
         static const AkUniqueID WEAPON_CHARGE_STOP = 1721627779U;
+        static const AkUniqueID WEAPON_COOLDOWN = 464717451U;
         static const AkUniqueID WEAPON_SHOT = 2134580640U;
         static const AkUniqueID WEAPON_SHOT_1 = 899494556U;
     } // namespace EVENTS
@@ -41,6 +42,11 @@ namespace AK
         } // namespace FOOTSTEPS
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID ISPLAYING = 728654205U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

@@ -527,6 +527,70 @@
 										<ActiveSource Name="Weapon_shots" ID="{E0402A1D-D496-4D5E-A7EB-A8234B912687}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="minigun_overheat" ID="{67C3B198-0F2F-4E15-AB44-D49758941EFC}" ShortID="640676519">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>28</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-350</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FE1EF8DC-1491-40B7-806A-3F3C098BF594}">
+														<PropertyList>
+															<Property Name="Min" Type="Real64" Value="-650"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Weapons" ID="{0E17E321-C0F3-4913-839B-5DBFD74DFDDA}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="minigun_overheat" ID="{B8044881-424C-4250-B0C2-020C50C5097A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.07686323809524"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.20284048979592"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>minigun_overheat.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573049767"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="minigun_overheat" ID="{B8044881-424C-4250-B0C2-020C50C5097A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -709,6 +773,57 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Drone_hoover" ID="{DFC57ECE-AB3E-44FA-97C5-DB995B26AF0C}">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom CreatedFrom="{E712A671-9647-44EF-8B1B-857926D620F0}">
+														<Conversion Name="PCM As Input (Custom)" ID="{5FD3EAC5-856B-4325-B893-DE235D385209}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Mac">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{7912E1E0-6DAB-4BCF-B3BE-550A2A7A4281}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{8EC0EA40-548C-44E8-80E9-2F0B6FF91643}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+											</ReferenceList>
 											<Language>SFX</Language>
 											<AudioFile>Drone_hoover.wav</AudioFile>
 											<MediaIDList>
@@ -762,10 +877,60 @@
 									<ChildrenList>
 										<AudioFileSource Name="GasFire" ID="{6C5AF03F-42A7-4C8B-BA67-14234EC24E20}">
 											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.126373"/>
 												<Property Name="TrimEnd" Type="Real64" Value="2.3408168"/>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom CreatedFrom="{103058FA-B09E-42AF-A6BA-B711CD85E365}">
+														<Conversion Name="PCM Auto Detect High (Custom)" ID="{DB26551B-77E7-4850-AA76-6839D3D2C216}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Mac">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value>3</Value>
+																		<Value Platform="Windows">3</Value>
+																		<Value Platform="Mac">3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{9602FBCD-FC52-4143-8115-06B9C4E70F07}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{CB6760EE-2E09-4638-B63B-061CEC0B770D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+											</ReferenceList>
 											<Language>SFX</Language>
 											<AudioFile>GasFire.wav</AudioFile>
 											<MediaIDList>

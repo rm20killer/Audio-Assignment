@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{34BE56F0-91D6-78B4-FD1D-64CBFD9E32D1}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{A115EB96-796A-F11B-07F0-FFC63449CFDF}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
@@ -55,7 +55,11 @@
 				</File>
 				<File Id="559817330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GasFire.wav</ShortName>
-					<CachePath>SFX/GasFire_5490497B.wem</CachePath>
+					<CachePath>SFX/GasFire_70BDFDD0.wem</CachePath>
+				</File>
+				<File Id="573049767" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>minigun_overheat.wav</ShortName>
+					<CachePath>SFX/minigun_overheat_FDF448D2.wem</CachePath>
 				</File>
 				<File Id="724166258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Damage_taken_1.wav</ShortName>
@@ -67,7 +71,7 @@
 				</File>
 				<File Id="1071062885" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drone_hoover.wav</ShortName>
-					<CachePath>SFX/Drone_hoover_7F4B14AA.wem</CachePath>
+					<CachePath>SFX/Drone_hoover_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -123,6 +127,11 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1721627779" Name="Weapon_charge_stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="464717451" Name="Weapon_cooldown" DurationType="OneShot" DurationMin="1.4723412" DurationMax="1.4723412">
+					<MediaRefs>
+						<MediaRef Id="573049767"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2134580640" Name="Weapon_shot" DurationType="OneShot" DurationMin="0.08567046" DurationMax="0.11435634">
 					<MediaRefs>
 						<MediaRef Id="401182583"/>
@@ -143,7 +152,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{73D0CFF1-058C-0556-5EFF-68461E564439}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4BB71F1C-D876-37A3-E17C-7245FFB4DE83}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -162,6 +171,9 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="728654205" Name="IsPlaying"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -190,5 +202,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3E0C0A0B-6F68-AC0F-FF4D-B0CCD209B4ED}</FileHash>
+	<FileHash>{0F28E513-6A87-2980-17BB-3324F43C2B86}</FileHash>
 </SoundBanksInfo>
