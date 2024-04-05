@@ -448,7 +448,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+													<ObjectRef Name="Weapons" ID="{0E17E321-C0F3-4913-839B-5DBFD74DFDDA}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -472,11 +472,11 @@
 														<AudioFileSource Name="Weapon_shots" ID="{5C752F0F-2CFB-4B1E-9000-F316AFF211C0}">
 															<PropertyList>
 																<Property Name="Color" Type="int16" Value="2"/>
-																<Property Name="FadeInDuration" Type="Real64" Value="2.56084061047587"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.08599761727859"/>
 																<Property Name="OverrideColor" Type="bool" Value="True"/>
 																<Property Name="OverrideConversion" Type="bool" Value="True"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="1.50142435792284"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.09497809941944"/>
 																<Property Name="TrimEnd" Type="Real64" Value="4.53076549608402"/>
 															</PropertyList>
 															<ReferenceList>
@@ -569,7 +569,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+													<ObjectRef Name="Weapons" ID="{0E17E321-C0F3-4913-839B-5DBFD74DFDDA}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -674,7 +674,116 @@
 										</BlendContainer>
 									</ChildrenList>
 								</Folder>
-								<Folder Name="Impact" ID="{47DB411A-BC60-4138-9DDD-527C74C5E118}" ShortID="535532497"/>
+								<Folder Name="Impact" ID="{47DB411A-BC60-4138-9DDD-527C74C5E118}" ShortID="535532497">
+									<ChildrenList>
+										<RandomSequenceContainer Name="ImpactOnDirt" ID="{DBDB28F2-B9F4-4E7E-B41F-59BBF6CB7177}" ShortID="212379838">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>31</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>680</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{09F839E7-DED6-4267-A2C8-E533524BD93B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="500"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ImpactOnDirt_1" ID="{1818B37C-7ECE-4231-9C40-C6F8FAA709B5}" ShortID="74527211">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ImpactOnDirt_1" ID="{4D92E592-144E-469A-96E9-C7613258AC9E}">
+															<Language>SFX</Language>
+															<AudioFile>ImpactEffect\ImpactOnDirt_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="589007081"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ImpactOnDirt_1" ID="{4D92E592-144E-469A-96E9-C7613258AC9E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ImpactOnDirt_2" ID="{A92DE228-8B13-4A79-8164-100FC711D391}" ShortID="785460219">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ImpactOnDirt_2" ID="{98437A81-400F-426B-8467-8F137E955110}">
+															<Language>SFX</Language>
+															<AudioFile>ImpactEffect\ImpactOnDirt_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="804659850"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ImpactOnDirt_2" ID="{98437A81-400F-426B-8467-8F137E955110}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ImpactOnDirt_3" ID="{C6D9BEDA-8025-46A9-B6F5-C080861B5B05}" ShortID="954805212">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ImpactOnDirt_3" ID="{6D334E81-87E8-46AD-907B-27DF50712A22}">
+															<Language>SFX</Language>
+															<AudioFile>ImpactEffect\ImpactOnDirt_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="81886793"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ImpactOnDirt_3" ID="{6D334E81-87E8-46AD-907B-27DF50712A22}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
 								<Sound Name="Weapon_shots_01" ID="{6EDFD2B4-D85B-48D0-B44A-E4916A8343B9}" ShortID="1061166278">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
@@ -895,7 +1004,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+											<ObjectRef Name="Player" ID="{D760F3D8-E42F-4E8B-8A9E-E60B4785B04E}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1001,7 +1110,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+											<ObjectRef Name="Player" ID="{D760F3D8-E42F-4E8B-8A9E-E60B4785B04E}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1164,27 +1273,17 @@
 						</Folder>
 						<Folder Name="Drone" ID="{885F9861-1D76-4407-AE65-D4647DB055B6}" ShortID="1041426229">
 							<ChildrenList>
-								<Sound Name="Drone_hoover" ID="{B79E7758-B9F6-4B1B-86EE-82E6B24ED224}" ShortID="439499397">
+								<BlendContainer Name="Drone_hover" ID="{DCB2DE11-E398-41E0-8AB4-86482A513AEC}" ShortID="268664406">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>50</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{E66C8A62-1F2A-4F4F-B6B8-F3206D4B9253}">
+													<Modifier Name="" ID="{759D2405-B30A-43CD-A793-41EC852692CF}">
 														<PropertyList>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1192,7 +1291,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-20</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1205,72 +1304,164 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Drone_hoover" ID="{DFC57ECE-AB3E-44FA-97C5-DB995B26AF0C}">
+										<Sound Name="Drone_hoover" ID="{B79E7758-B9F6-4B1B-86EE-82E6B24ED224}" ShortID="439499397">
 											<PropertyList>
-												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>42</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>38</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E66C8A62-1F2A-4F4F-B6B8-F3206D4B9253}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<Custom CreatedFrom="{E712A671-9647-44EF-8B1B-857926D620F0}">
-														<Conversion Name="PCM As Input (Custom)" ID="{5FD3EAC5-856B-4325-B893-DE235D385209}">
-															<PropertyList>
-																<Property Name="Channels" Type="int32">
-																	<ValueList>
-																		<Value Platform="Windows">4</Value>
-																		<Value Platform="Mac">4</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="LRMix" Type="Real64">
-																	<ValueList>
-																		<Value Platform="Windows">0</Value>
-																		<Value Platform="Mac">0</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="MaxSampleRate" Type="int32">
-																	<ValueList>
-																		<Value Platform="Windows">0</Value>
-																		<Value Platform="Mac">0</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="MinSampleRate" Type="int32">
-																	<ValueList>
-																		<Value Platform="Windows">0</Value>
-																		<Value Platform="Mac">0</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="SampleRate" Type="int32">
-																	<ValueList>
-																		<Value Platform="Windows">0</Value>
-																		<Value Platform="Mac">0</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ConversionPluginInfoList>
-																<ConversionPluginInfo Platform="Windows">
-																	<ConversionPlugin Name="" ID="{7912E1E0-6DAB-4BCF-B3BE-550A2A7A4281}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-																</ConversionPluginInfo>
-																<ConversionPluginInfo Platform="Mac">
-																	<ConversionPlugin Name="" ID="{8EC0EA40-548C-44E8-80E9-2F0B6FF91643}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-																</ConversionPluginInfo>
-															</ConversionPluginInfoList>
-														</Conversion>
-													</Custom>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
 												</Reference>
 											</ReferenceList>
-											<Language>SFX</Language>
-											<AudioFile>Drone_hoover.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1071062885"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ChildrenList>
+												<AudioFileSource Name="Drone_hoover" ID="{DFC57ECE-AB3E-44FA-97C5-DB995B26AF0C}">
+													<PropertyList>
+														<Property Name="OverrideConversion" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<Custom CreatedFrom="{E712A671-9647-44EF-8B1B-857926D620F0}">
+																<Conversion Name="PCM As Input (Custom)" ID="{5FD3EAC5-856B-4325-B893-DE235D385209}">
+																	<PropertyList>
+																		<Property Name="Channels" Type="int32">
+																			<ValueList>
+																				<Value Platform="Windows">4</Value>
+																				<Value Platform="Mac">4</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="LRMix" Type="Real64">
+																			<ValueList>
+																				<Value Platform="Windows">0</Value>
+																				<Value Platform="Mac">0</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="MaxSampleRate" Type="int32">
+																			<ValueList>
+																				<Value Platform="Windows">0</Value>
+																				<Value Platform="Mac">0</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="MinSampleRate" Type="int32">
+																			<ValueList>
+																				<Value Platform="Windows">0</Value>
+																				<Value Platform="Mac">0</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="SampleRate" Type="int32">
+																			<ValueList>
+																				<Value Platform="Windows">0</Value>
+																				<Value Platform="Mac">0</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ConversionPluginInfoList>
+																		<ConversionPluginInfo Platform="Windows">
+																			<ConversionPlugin Name="" ID="{7912E1E0-6DAB-4BCF-B3BE-550A2A7A4281}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																		</ConversionPluginInfo>
+																		<ConversionPluginInfo Platform="Mac">
+																			<ConversionPlugin Name="" ID="{8EC0EA40-548C-44E8-80E9-2F0B6FF91643}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																		</ConversionPluginInfo>
+																	</ConversionPluginInfoList>
+																</Conversion>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Language>SFX</Language>
+													<AudioFile>Drone_hoover.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1071062885"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drone_hoover" ID="{DFC57ECE-AB3E-44FA-97C5-DB995B26AF0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="drone009_gloomy drone" ID="{C7DCEDAC-3127-4FC1-A961-5D6860BC9FC5}" ShortID="247721338">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A2B98DFD-EE64-4406-AD82-D9D14901460D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="PCM Auto Detect Medium" ID="{E24008BC-4813-4D98-B020-6F66B2750A16}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="drone009_gloomy drone" ID="{7D556E60-88A4-461E-ADC6-037375FD400D}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.0504"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.692"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>drone009_gloomy drone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="756819456"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="drone009_gloomy drone" ID="{7D556E60-88A4-461E-ADC6-037375FD400D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{4AD69B52-2EAA-40BF-A019-E80F6FB124FF}"/>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="Drone_hoover" ID="{DFC57ECE-AB3E-44FA-97C5-DB995B26AF0C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</BlendContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -1312,8 +1503,8 @@
 											<PropertyList>
 												<Property Name="OverrideConversion" Type="bool" Value="True"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.126373"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.3408168"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.223583"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.2980444"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">

@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{BA1178A5-7C07-21BB-39CE-6051675CEC16}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{D9EEAB08-C07F-6CA9-CCF1-984F3627B021}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
 				<File Id="31319335" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind_1.WAV</ShortName>
 					<CachePath>SFX/Wind_1_7EA4FCEF.wem</CachePath>
+				</File>
+				<File Id="81886793" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ImpactEffect\ImpactOnDirt_3.wav</ShortName>
+					<CachePath>SFX/ImpactEffect/ImpactOnDirt_3_9F909560.wem</CachePath>
 				</File>
 				<File Id="88959328" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Metal\Metal_Footstep_2.wav</ShortName>
@@ -59,23 +63,35 @@
 				</File>
 				<File Id="553755816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
-					<CachePath>SFX/Weapon_shots_8FC8DF8A.wem</CachePath>
+					<CachePath>SFX/Weapon_shots_151320BF.wem</CachePath>
 				</File>
 				<File Id="559817330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GasFire.wav</ShortName>
-					<CachePath>SFX/GasFire_70BDFDD0.wem</CachePath>
+					<CachePath>SFX/GasFire_FBAE16CC.wem</CachePath>
 				</File>
 				<File Id="573049767" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>minigun_overheat.wav</ShortName>
 					<CachePath>SFX/minigun_overheat_5D05B779.wem</CachePath>
 				</File>
+				<File Id="589007081" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ImpactEffect\ImpactOnDirt_1.wav</ShortName>
+					<CachePath>SFX/ImpactEffect/ImpactOnDirt_1_9F909560.wem</CachePath>
+				</File>
 				<File Id="724166258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Damage_taken_1.wav</ShortName>
 					<CachePath>SFX/Damage_taken_1_9F909560.wem</CachePath>
 				</File>
+				<File Id="756819456" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>drone009_gloomy drone.wav</ShortName>
+					<CachePath>SFX/drone009_gloomy drone_A7AF498C.wem</CachePath>
+				</File>
 				<File Id="760466330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
-					<CachePath>SFX/Weapon_shots_F319CAD5.wem</CachePath>
+					<CachePath>SFX/Weapon_shots_FC43B942.wem</CachePath>
+				</File>
+				<File Id="804659850" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ImpactEffect\ImpactOnDirt_2.wav</ShortName>
+					<CachePath>SFX/ImpactEffect/ImpactOnDirt_2_9F909560.wem</CachePath>
 				</File>
 				<File Id="877521368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jetpack_Pickup.wav</ShortName>
@@ -98,6 +114,7 @@
 				<Event Id="3879926930" Name="Drone_death" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="851403683" Name="Drone_hover_loop" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="756819456"/>
 						<MediaRef Id="1071062885"/>
 					</MediaRefs>
 				</Event>
@@ -114,6 +131,13 @@
 				<Event Id="1632583748" Name="Play_GasLeak" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="559817330"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="983539040" Name="Play_ImpactOnDirt" DurationType="OneShot" DurationMin="0.046070836" DurationMax="0.102514066">
+					<MediaRefs>
+						<MediaRef Id="81886793"/>
+						<MediaRef Id="589007081"/>
+						<MediaRef Id="804659850"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3747290063" Name="Play_Jetpack_Pickup" DurationType="OneShot" DurationMin="0.49359828" DurationMax="0.58699065">
@@ -239,5 +263,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C54E56FC-36B6-DE4D-DC44-76C204FBC552}</FileHash>
+	<FileHash>{8FCD400F-FD4F-9E4C-D817-DF40FAC0E7AC}</FileHash>
 </SoundBanksInfo>

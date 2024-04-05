@@ -166,6 +166,21 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Folder Name="Impact" ID="{C013BDEC-7D5B-4748-91D1-9706857AD1D8}" ShortID="234183881">
+									<ChildrenList>
+										<Event Name="Play_ImpactOnDirt" ID="{02D82BD7-EE99-4040-8A9F-9C6CDEB56144}">
+											<ChildrenList>
+												<Action Name="" ID="{17FD824D-7624-44B8-BBF5-CE834B1BD198}" ShortID="597592593">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ImpactOnDirt" ID="{DBDB28F2-B9F4-4E7E-B41F-59BBF6CB7177}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Jetpack" ID="{D313AF9E-A0B8-4BCF-BEE1-8C13475DEF0F}">
@@ -224,10 +239,10 @@
 							<ChildrenList>
 								<Event Name="Drone_hover_loop" ID="{16BC4B6F-4688-48DE-9142-087DD29C6AEC}">
 									<ChildrenList>
-										<Action Name="" ID="{5F4E9339-DCAC-45C7-AE7E-0D226E5789AD}" ShortID="617293028">
+										<Action Name="" ID="{B658D343-C9D5-4BA9-999F-9BD2E8EFCCD8}" ShortID="227892113">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Drone_hoover" ID="{B79E7758-B9F6-4B1B-86EE-82E6B24ED224}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+													<ObjectRef Name="Drone_hover" ID="{DCB2DE11-E398-41E0-8AB4-86482A513AEC}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

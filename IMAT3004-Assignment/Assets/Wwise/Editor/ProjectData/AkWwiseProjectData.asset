@@ -239,7 +239,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584893319206928610
+    m_lastTime: -8584893291160585980
     List:
     - name: CellMoving
       guid: edf101bb3758fd46bdf384ef7b9d1feb
@@ -454,8 +454,31 @@ MonoBehaviour:
         guid: 572ec250fd764e49aec28537bb270a7b
       Path: Events\Default Work Unit\Player\Weapon\Fuelcell\FuelCellsCooled
       maxAttenuation: 0
-      maxDuration: 0.44995832
-      minDuration: 0.44995832
+      maxDuration: -1
+      minDuration: -1
+    - name: Impact
+      guid: ecbd13c05b7d484791d19706857ad1d8
+      id: 3257506471
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Impact
+        ObjectType: 4
+        guid: ecbd13c05b7d484791d19706857ad1d8
+      Path: Events\Default Work Unit\Player\Weapon\Impact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Jetpack
       guid: 9eaf13d3b8a0cf4bbee18c13475def0f
       id: 2680315389
@@ -499,6 +522,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_ImpactOnDirt
+      guid: d72bd80299ee40408a9f9c6cdeb56144
+      id: 983539040
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Impact
+        ObjectType: 4
+        guid: ecbd13c05b7d484791d19706857ad1d8
+      - ElementName: Play_ImpactOnDirt
+        ObjectType: 3
+        guid: d72bd80299ee40408a9f9c6cdeb56144
+      Path: Events\Default Work Unit\Player\Weapon\Impact\Play_ImpactOnDirt
+      maxAttenuation: 0
+      maxDuration: 0.102514066
+      minDuration: 0.046070836
     - name: Play_Jetpack_Pickup
       guid: a0dc21efad162642bf9e25f736115632
       id: 3747290063
@@ -517,8 +566,8 @@ MonoBehaviour:
         guid: a0dc21efad162642bf9e25f736115632
       Path: Events\Default Work Unit\Player\Play_Jetpack_Pickup
       maxAttenuation: 0
-      maxDuration: 0.8285
-      minDuration: 0.8285
+      maxDuration: 0.58699065
+      minDuration: 0.49359828
     - name: Play_Player_footstep
       guid: 67b1b4f3f73394498fa8c34e192219b5
       id: 1724675634
@@ -559,6 +608,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.2496058
       minDuration: 0.2355965
+    - name: Play_Weapon_charge_loop
+      guid: 433d925310e65f4fa03f55591413c090
+      id: 2099880966
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Play_Weapon_charge_loop
+        ObjectType: 3
+        guid: 433d925310e65f4fa03f55591413c090
+      Path: Events\Default Work Unit\Player\Weapon\Play_Weapon_charge_loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Player
       guid: 218d43b7d161a54f8d2d0a42e89da0a6
       id: 1069431850
@@ -654,8 +726,8 @@ MonoBehaviour:
         guid: 4c2161136b41894f81c3ffa647b1e954
       Path: Events\Default Work Unit\Player\Weapon\Weapon_Charge_buildup
       maxAttenuation: 0
-      maxDuration: 3.2905047
-      minDuration: 3.2905047
+      maxDuration: -1
+      minDuration: -1
     - name: Weapon_charge_release
       guid: 20599e19bbc5cd43ac5705de28f8f5b1
       id: 2723833262

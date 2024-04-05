@@ -242,6 +242,11 @@ namespace Unity.FPS.Gameplay
             // impact vfx
             if (ImpactVfx)
             {
+                if(collider.gameObject.name == "Terrain")
+                {
+                    AkSoundEngine.PostEvent("Play_ImpactOnDirt", gameObject);
+                }
+                // AkSoundEngine.PostEvent("Play_", gameObject);
                 GameObject impactVfxInstance = Instantiate(ImpactVfx, point + (normal * ImpactVfxSpawnOffset),
                     Quaternion.LookRotation(normal));
                 if (ImpactVfxLifetime > 0)
