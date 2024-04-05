@@ -17,11 +17,14 @@ namespace AK
         static const AkUniqueID DRONE_HOVER_LOOP = 851403683U;
         static const AkUniqueID ENEMY_DAMAGE = 555067025U;
         static const AkUniqueID JETPACK = 2680315389U;
+        static const AkUniqueID PLAY_BOOM = 1357519519U;
         static const AkUniqueID PLAY_GASLEAK = 1632583748U;
+        static const AkUniqueID PLAY_GLASS_002 = 3931950989U;
         static const AkUniqueID PLAY_IMPACTONDIRT = 983539040U;
         static const AkUniqueID PLAY_JETPACK_PICKUP = 3747290063U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEP = 1724675634U;
         static const AkUniqueID PLAY_SCREENSHOT = 2183894550U;
+        static const AkUniqueID PLAY_TICK_002 = 4138254406U;
         static const AkUniqueID PLAY_WEAPON_CHARGE_LOOP = 2099880966U;
         static const AkUniqueID PLAYER_DAMAGE = 2074073782U;
         static const AkUniqueID WEAPON_CHARGE_BUILDUP = 3108093142U;

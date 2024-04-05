@@ -228,6 +228,7 @@ namespace Unity.FPS.Gameplay
                 // area damage
                 AreaOfDamage.InflictDamageInArea(Damage, point, HittableLayers, k_TriggerInteraction,
                     m_ProjectileBase.Owner);
+                AkSoundEngine.PostEvent("Play_Boom", gameObject);
             }
             else
             {

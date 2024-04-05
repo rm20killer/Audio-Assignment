@@ -1758,6 +1758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4607517921765586558}
   - component: {fileID: 4607517921765586557}
+  - component: {fileID: 2244125634077802064}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -1832,8 +1833,32 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UIClick, Assembly-CSharp
+        m_MethodName: PlayAudioClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &2244125634077802064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607517921765586559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e401ac9666df449b5dd63a5914a67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4607517922219504877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,7 +3299,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0

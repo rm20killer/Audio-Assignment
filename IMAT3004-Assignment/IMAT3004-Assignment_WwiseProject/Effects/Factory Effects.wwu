@@ -44,10 +44,11 @@
 						</Effect>
 						<Effect Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
-								<Property Name="AttackTime" Type="Real32" Value="0.04"/>
+								<Property Name="AttackTime" Type="Real32" Value="1.5"/>
+								<Property Name="OutputGain" Type="Real32" Value="-0.6"/>
 								<Property Name="Ratio" Type="Real32" Value="12"/>
-								<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
-								<Property Name="Threshold" Type="Real32" Value="-6"/>
+								<Property Name="ReleaseTime" Type="Real32" Value="1.71"/>
+								<Property Name="Threshold" Type="Real32" Value="-14.7"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -1886,10 +1887,12 @@
 						</Effect>
 						<Effect Name="Boomerang" ID="{65397B72-19EC-43DB-B2D2-EB84437B6BDC}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
+								<Property Name="ModDepth" Type="Real32" Value="50.5"/>
 								<Property Name="ModFrequency" Type="Real32" Value="3"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="ModPhaseMode" Type="int32" Value="1"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
-								<Property Name="ModPhaseSpread" Type="Real32" Value="58"/>
+								<Property Name="ModPhaseSpread" Type="Real32" Value="144"/>
 								<Property Name="ModWaveform" Type="int32" Value="1"/>
 							</PropertyList>
 						</Effect>
@@ -1955,8 +1958,11 @@
 								</Effect>
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="71"/>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
-										<Property Name="Pitch" Type="Real32" Value="-1200"/>
+										<Property Name="FilterFrequency" Type="Real32" Value="20000"/>
+										<Property Name="FilterType" Type="int32" Value="2"/>
+										<Property Name="Pitch" Type="Real32" Value="-600"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

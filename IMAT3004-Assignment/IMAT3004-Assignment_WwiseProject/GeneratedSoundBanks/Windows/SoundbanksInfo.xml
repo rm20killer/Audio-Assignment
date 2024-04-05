@@ -9,13 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{D9EEAB08-C07F-6CA9-CCF1-984F3627B021}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{D46E379E-7602-789B-B985-F3219ED6238A}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
 				<File Id="31319335" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind_1.WAV</ShortName>
-					<CachePath>SFX/Wind_1_7EA4FCEF.wem</CachePath>
+					<CachePath>SFX/Wind_1_A1CCFF58.wem</CachePath>
 				</File>
 				<File Id="81886793" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ImpactEffect\ImpactOnDirt_3.wav</ShortName>
@@ -31,7 +31,7 @@
 				</File>
 				<File Id="266360618" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jetpack.wav</ShortName>
-					<CachePath>SFX/Jetpack_D32E8958.wem</CachePath>
+					<CachePath>SFX/Jetpack_3AC4EF1D.wem</CachePath>
 				</File>
 				<File Id="275477400" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Metal\Metal_Footstep_3.wav</ShortName>
@@ -53,6 +53,10 @@
 					<ShortName>Metal\Metal_Footstep_1.wav</ShortName>
 					<CachePath>SFX/Metal/Metal_Footstep_1_9F909560.wem</CachePath>
 				</File>
+				<File Id="470796395" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explosion.wav</ShortName>
+					<CachePath>SFX/Explosion_C004B05D.wem</CachePath>
+				</File>
 				<File Id="532477279" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Enemy_Damage_taken.wav</ShortName>
 					<CachePath>SFX/Enemy_Damage_taken_51BD11F7.wem</CachePath>
@@ -63,11 +67,11 @@
 				</File>
 				<File Id="553755816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
-					<CachePath>SFX/Weapon_shots_151320BF.wem</CachePath>
+					<CachePath>SFX/Weapon_shots_0FDBB137.wem</CachePath>
 				</File>
 				<File Id="559817330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GasFire.wav</ShortName>
-					<CachePath>SFX/GasFire_FBAE16CC.wem</CachePath>
+					<CachePath>SFX/GasFire_17A6CB65.wem</CachePath>
 				</File>
 				<File Id="573049767" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>minigun_overheat.wav</ShortName>
@@ -83,11 +87,11 @@
 				</File>
 				<File Id="756819456" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>drone009_gloomy drone.wav</ShortName>
-					<CachePath>SFX/drone009_gloomy drone_A7AF498C.wem</CachePath>
+					<CachePath>SFX/drone009_gloomy drone_2E0478EB.wem</CachePath>
 				</File>
 				<File Id="760466330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
-					<CachePath>SFX/Weapon_shots_FC43B942.wem</CachePath>
+					<CachePath>SFX/Weapon_shots_DE23E3BD.wem</CachePath>
 				</File>
 				<File Id="804659850" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ImpactEffect\ImpactOnDirt_2.wav</ShortName>
@@ -95,11 +99,11 @@
 				</File>
 				<File Id="877521368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jetpack_Pickup.wav</ShortName>
-					<CachePath>SFX/Jetpack_Pickup_1EC5D022.wem</CachePath>
+					<CachePath>SFX/Jetpack_Pickup_F8982141.wem</CachePath>
 				</File>
 				<File Id="895864449" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind_1.WAV</ShortName>
-					<CachePath>SFX/Wind_1_1E3109FC.wem</CachePath>
+					<CachePath>SFX/Wind_1_0F178231.wem</CachePath>
 				</File>
 				<File Id="910620604" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sand_Footstep_5.wav</ShortName>
@@ -126,6 +130,11 @@
 				<Event Id="2680315389" Name="Jetpack" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="266360618"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1357519519" Name="Play_Boom" DurationType="OneShot" DurationMin="1.8847053" DurationMax="2.241305">
+					<MediaRefs>
+						<MediaRef Id="470796395"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1632583748" Name="Play_GasLeak" DurationType="Infinite">
@@ -244,24 +253,42 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1551306167" Type="User" Language="SFX" Hash="{2BDBC5E7-B339-C57A-D121-4237D75A5FAD}">
+		<SoundBank Id="1551306167" Type="User" Language="SFX" Hash="{1DA177FE-F2EF-7B7B-362A-FBFBE5D334C7}">
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
 			<Media>
+				<File Id="592534448" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>glass_002.wav</ShortName>
+					<CachePath>SFX/glass_002_9F909560.wem</CachePath>
+				</File>
 				<File Id="737061893" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>Screenshot.wav</ShortName>
 					<Path>Media/737061893.wem</Path>
 					<CachePath>SFX/Screenshot_9F909560.wem</CachePath>
 				</File>
+				<File Id="1048289460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>tick_002.wav</ShortName>
+					<CachePath>SFX/tick_002_9F909560.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="3931950989" Name="Play_glass_002" DurationType="OneShot" DurationMin="0.11163507" DurationMax="0.14065138">
+					<MediaRefs>
+						<MediaRef Id="592534448"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2183894550" Name="Play_Screenshot" DurationType="OneShot" DurationMin="0.2355965" DurationMax="0.2496058">
 					<MediaRefs>
 						<MediaRef Id="737061893"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4138254406" Name="Play_tick_002" DurationType="OneShot" DurationMin="0.020686626" DurationMax="0.026063517">
+					<MediaRefs>
+						<MediaRef Id="1048289460"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8D41F05D-7B1A-C721-3EF4-B0D1F3E22A64}</FileHash>
+	<FileHash>{C7CEE374-EBC9-008F-F1B2-C068D2B160BA}</FileHash>
 </SoundBanksInfo>

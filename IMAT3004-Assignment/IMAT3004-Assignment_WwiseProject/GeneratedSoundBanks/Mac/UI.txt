@@ -1,6 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2183894550	Play_Screenshot			\Default Work Unit\UI\Play_Screenshot	
+	3931950989	Play_glass_002			\Default Work Unit\UI\Play_glass_002	
+	4138254406	Play_tick_002			\Default Work Unit\UI\Play_tick_002	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	592534448	glass_002	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\glass_002_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\glass_002		1598
+	1048289460	tick_002	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\tick_002_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\tick_002		2144
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	737061893	Screenshot	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Screenshot_9D0E2A85.wem	737061893.wem	\Actor-Mixer Hierarchy\Default Work Unit\UI\Screenshot	
+	737061893	Screenshot	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Screenshot_9F909560.wem	737061893.wem	\Actor-Mixer Hierarchy\Default Work Unit\UI\Screenshot	
 

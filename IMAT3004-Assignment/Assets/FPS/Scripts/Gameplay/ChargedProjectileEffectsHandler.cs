@@ -15,7 +15,7 @@ namespace Unity.FPS.Gameplay
         public MinMaxColor Color;
 
         MeshRenderer[] m_AffectedRenderers;
-        ProjectileBase m_ProjectileBase;
+        ProjectileBase m_ProjectileBase; 
 
         void OnEnable()
         {

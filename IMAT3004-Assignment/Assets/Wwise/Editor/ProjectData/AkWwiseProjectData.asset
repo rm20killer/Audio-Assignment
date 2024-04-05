@@ -197,7 +197,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584893319207013959
+    m_lastTime: -8584892458559033408
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -239,7 +239,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584893291160585980
+    m_lastTime: -8584892458559134024
     List:
     - name: CellMoving
       guid: edf101bb3758fd46bdf384ef7b9d1feb
@@ -499,6 +499,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Boom
+      guid: f889816ca2c26c4b8d5d02b9907fdd5e
+      id: 1357519519
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Impact
+        ObjectType: 4
+        guid: ecbd13c05b7d484791d19706857ad1d8
+      - ElementName: Play_Boom
+        ObjectType: 3
+        guid: f889816ca2c26c4b8d5d02b9907fdd5e
+      Path: Events\Default Work Unit\Player\Weapon\Impact\Play_Boom
+      maxAttenuation: 0
+      maxDuration: 2.241305
+      minDuration: 1.8847053
     - name: Play_GasLeak
       guid: 53c682f614af464086f7ed5ef9e0b8ac
       id: 1632583748
@@ -522,6 +548,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_glass_002
+      guid: 259a3065d4e86440806de7691f6b0732
+      id: 3931950989
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: UI
+        ObjectType: 4
+        guid: 53e3738d0d4c014fbbd3de2eb78561e0
+      - ElementName: Play_glass_002
+        ObjectType: 3
+        guid: 259a3065d4e86440806de7691f6b0732
+      Path: Events\Default Work Unit\UI\Play_glass_002
+      maxAttenuation: 0
+      maxDuration: 0.14065138
+      minDuration: 0.11163507
     - name: Play_ImpactOnDirt
       guid: d72bd80299ee40408a9f9c6cdeb56144
       id: 983539040
@@ -608,6 +654,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.2496058
       minDuration: 0.2355965
+    - name: Play_tick_002
+      guid: 8eebe7fbb910c54eaddc3021aeca615b
+      id: 4138254406
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: UI
+        ObjectType: 4
+        guid: 53e3738d0d4c014fbbd3de2eb78561e0
+      - ElementName: Play_tick_002
+        ObjectType: 3
+        guid: 8eebe7fbb910c54eaddc3021aeca615b
+      Path: Events\Default Work Unit\UI\Play_tick_002
+      maxAttenuation: 0
+      maxDuration: 0.026063517
+      minDuration: 0.020686626
     - name: Play_Weapon_charge_loop
       guid: 433d925310e65f4fa03f55591413c090
       id: 2099880966
