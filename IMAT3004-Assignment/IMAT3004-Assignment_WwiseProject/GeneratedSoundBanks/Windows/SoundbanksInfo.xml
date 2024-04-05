@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{A115EB96-796A-F11B-07F0-FFC63449CFDF}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{BA1178A5-7C07-21BB-39CE-6051675CEC16}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
+				<File Id="31319335" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_1.WAV</ShortName>
+					<CachePath>SFX/Wind_1_7EA4FCEF.wem</CachePath>
+				</File>
 				<File Id="88959328" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Metal\Metal_Footstep_2.wav</ShortName>
 					<CachePath>SFX/Metal/Metal_Footstep_2_9F909560.wem</CachePath>
@@ -20,6 +24,10 @@
 				<File Id="110136579" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sand_Footstep_4.wav</ShortName>
 					<CachePath>SFX/Sand_Footstep_4_8CB8A47E.wem</CachePath>
+				</File>
+				<File Id="266360618" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jetpack.wav</ShortName>
+					<CachePath>SFX/Jetpack_D32E8958.wem</CachePath>
 				</File>
 				<File Id="275477400" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Metal\Metal_Footstep_3.wav</ShortName>
@@ -51,7 +59,7 @@
 				</File>
 				<File Id="553755816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
-					<CachePath>SFX/Weapon_shots_9C280C11.wem</CachePath>
+					<CachePath>SFX/Weapon_shots_8FC8DF8A.wem</CachePath>
 				</File>
 				<File Id="559817330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GasFire.wav</ShortName>
@@ -59,11 +67,23 @@
 				</File>
 				<File Id="573049767" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>minigun_overheat.wav</ShortName>
-					<CachePath>SFX/minigun_overheat_FDF448D2.wem</CachePath>
+					<CachePath>SFX/minigun_overheat_5D05B779.wem</CachePath>
 				</File>
 				<File Id="724166258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Damage_taken_1.wav</ShortName>
 					<CachePath>SFX/Damage_taken_1_9F909560.wem</CachePath>
+				</File>
+				<File Id="760466330" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Weapon_shots.wav</ShortName>
+					<CachePath>SFX/Weapon_shots_F319CAD5.wem</CachePath>
+				</File>
+				<File Id="877521368" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jetpack_Pickup.wav</ShortName>
+					<CachePath>SFX/Jetpack_Pickup_1EC5D022.wem</CachePath>
+				</File>
+				<File Id="895864449" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_1.WAV</ShortName>
+					<CachePath>SFX/Wind_1_1E3109FC.wem</CachePath>
 				</File>
 				<File Id="910620604" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sand_Footstep_5.wav</ShortName>
@@ -86,9 +106,19 @@
 						<MediaRef Id="532477279"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2680315389" Name="Jetpack" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="266360618"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1632583748" Name="Play_GasLeak" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="559817330"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3747290063" Name="Play_Jetpack_Pickup" DurationType="OneShot" DurationMin="0.49359828" DurationMax="0.58699065">
+					<MediaRefs>
+						<MediaRef Id="877521368"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1724675634" Name="Play_Player_footstep" DurationType="OneShot" DurationMin="0.24657631" DurationMax="0.51423156">
@@ -111,14 +141,21 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2099880966" Name="Play_Weapon_charge_loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="31319335"/>
+						<MediaRef Id="760466330"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2074073782" Name="Player_Damage" DurationType="OneShot" DurationMin="0.55448675" DurationMax="0.62239045">
 					<MediaRefs>
 						<MediaRef Id="724166258"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3108093142" Name="Weapon_Charge_buildup" DurationType="OneShot" DurationMin="3.2905047" DurationMax="3.2905047">
+				<Event Id="3108093142" Name="Weapon_Charge_buildup" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="553755816"/>
+						<MediaRef Id="895864449"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2723833262" Name="Weapon_charge_release" DurationType="OneShot" DurationMin="1.063338" DurationMax="1.2285305">
@@ -202,5 +239,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7A71A6A8-5422-973B-07AA-8F063900700D}</FileHash>
+	<FileHash>{55D71A08-3D13-6EF7-B194-58EC319F62F3}</FileHash>
 </SoundBanksInfo>

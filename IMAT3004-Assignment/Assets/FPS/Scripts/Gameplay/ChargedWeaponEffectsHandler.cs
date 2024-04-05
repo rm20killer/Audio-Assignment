@@ -60,6 +60,8 @@ namespace Unity.FPS.Gameplay
         float m_LastChargeTriggerTimestamp;
         float m_ChargeRatio;
         float m_EndchargeTime;
+        
+        bool playingSound = false;
 
         void Awake()
         {
@@ -106,8 +108,59 @@ namespace Unity.FPS.Gameplay
 
             m_VelocityOverTimeModule.orbitalY = OrbitY.GetValueFromRatio(m_ChargeRatio);
             m_DiskOrbitParticle.transform.localScale = Radius.GetValueFromRatio(m_ChargeRatio * 1.1f);
-
-
+            if(m_ChargeRatio <= 0.1f)
+            {
+                stopSound();
+                StopLoopSound();
+            }
+            else
+            {
+                if (m_ChargeRatio >=1f)
+                {
+                    PlayLoopSound();
+                }
+                else
+                {
+                    playSound();
+                    StopLoopSound();
+                }
+            }
+            
+        }
+        uint SoundIDLoop;
+        uint SoundID;
+        bool playingLoopSound = false;
+        void playSound()
+        {
+            if (!playingSound)
+            {
+                SoundID = AkSoundEngine.PostEvent("Weapon_Charge_buildup", gameObject);
+                playingSound = true;
+            }
+            // AkSoundEngine.PostEvent("Weapon_Charge_buildup", gameObject);
+            // playingSound = true;
+        }
+        void stopSound()
+        {
+            if (playingSound)
+            {
+                playingSound = false;
+                AkSoundEngine.StopPlayingID(SoundID);
+            }
+        }
+        
+        void PlayLoopSound()
+        {
+            if (!playingLoopSound)
+            {
+                SoundIDLoop = AkSoundEngine.PostEvent("Play_Weapon_charge_loop", gameObject);
+                playingLoopSound = true;
+            }
+        }
+        void StopLoopSound()
+        {
+            AkSoundEngine.StopPlayingID(SoundIDLoop);
+            playingLoopSound = false;
         }
     }
 }

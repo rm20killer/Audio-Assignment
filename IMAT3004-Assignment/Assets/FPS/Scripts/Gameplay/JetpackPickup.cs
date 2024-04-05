@@ -10,6 +10,7 @@
 
             if (jetpack.TryUnlock())
             {
+                AkSoundEngine.PostEvent("Play_Jetpack_Pickup", gameObject);
                 PlayPickupFeedback();
                 Destroy(gameObject);
             }

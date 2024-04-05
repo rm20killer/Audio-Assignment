@@ -21,6 +21,9 @@ namespace Unity.FPS.Gameplay
         WeaponController m_Weapon;
         bool[] m_FuelCellsCooled;
 
+        
+        bool b_PlaySound = false;
+        
         void Start()
         {
             m_Weapon = GetComponent<WeaponController>();
@@ -60,6 +63,12 @@ namespace Unity.FPS.Gameplay
                         Vector3.Lerp(FuelCellUsedPosition, FuelCellUnusedPosition, value);
                 }
             }
+        }
+
+
+        void playSoundEffect(GameObject cell)
+        {
+            AkSoundEngine.PostEvent("FuelCellsCooled", cell);
         }
     }
 }

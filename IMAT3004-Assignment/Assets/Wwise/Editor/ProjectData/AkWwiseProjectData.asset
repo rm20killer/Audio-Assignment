@@ -197,7 +197,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584893687465950666
+    m_lastTime: -8584893319207013959
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -239,8 +239,34 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584893687466038470
+    m_lastTime: -8584893319206928610
     List:
+    - name: CellMoving
+      guid: edf101bb3758fd46bdf384ef7b9d1feb
+      id: 761042271
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Fuelcell
+        ObjectType: 4
+        guid: 858cf598a4caff46ad79f7936ec111ed
+      - ElementName: CellMoving
+        ObjectType: 3
+        guid: edf101bb3758fd46bdf384ef7b9d1feb
+      Path: Events\Default Work Unit\Player\Weapon\Fuelcell\CellMoving
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Drone
       guid: ee75738a445d184d8ff337051e1ca761
       id: 2739838641
@@ -381,6 +407,75 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Fuelcell
+      guid: 858cf598a4caff46ad79f7936ec111ed
+      id: 1625891301
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Fuelcell
+        ObjectType: 4
+        guid: 858cf598a4caff46ad79f7936ec111ed
+      Path: Events\Default Work Unit\Player\Weapon\Fuelcell
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FuelCellsCooled
+      guid: 572ec250fd764e49aec28537bb270a7b
+      id: 2193374796
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Fuelcell
+        ObjectType: 4
+        guid: 858cf598a4caff46ad79f7936ec111ed
+      - ElementName: FuelCellsCooled
+        ObjectType: 3
+        guid: 572ec250fd764e49aec28537bb270a7b
+      Path: Events\Default Work Unit\Player\Weapon\Fuelcell\FuelCellsCooled
+      maxAttenuation: 0
+      maxDuration: 0.44995832
+      minDuration: 0.44995832
+    - name: Jetpack
+      guid: 9eaf13d3b8a0cf4bbee18c13475def0f
+      id: 2680315389
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Jetpack
+        ObjectType: 3
+        guid: 9eaf13d3b8a0cf4bbee18c13475def0f
+      Path: Events\Default Work Unit\Player\Jetpack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_GasLeak
       guid: 53c682f614af464086f7ed5ef9e0b8ac
       id: 1632583748
@@ -404,6 +499,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Jetpack_Pickup
+      guid: a0dc21efad162642bf9e25f736115632
+      id: 3747290063
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Play_Jetpack_Pickup
+        ObjectType: 3
+        guid: a0dc21efad162642bf9e25f736115632
+      Path: Events\Default Work Unit\Player\Play_Jetpack_Pickup
+      maxAttenuation: 0
+      maxDuration: 0.8285
+      minDuration: 0.8285
     - name: Play_Player_footstep
       guid: 67b1b4f3f73394498fa8c34e192219b5
       id: 1724675634

@@ -50,7 +50,7 @@ namespace Unity.FPS.Gameplay
         public bool IsPlayergrounded() => m_PlayerCharacterController.IsGrounded;
 
         public UnityAction<bool> OnUnlockJetpack;
-
+        bool PlayingSound = false;
         void Start()
         {
             IsJetpackUnlocked = IsJetpackUnlockedAtStart;
@@ -111,9 +111,10 @@ namespace Unity.FPS.Gameplay
                     var emissionModulesVfx = JetpackVfx[i].emission;
                     emissionModulesVfx.enabled = true;
                 }
-
-                if (!AudioSource.isPlaying)
-                    AudioSource.Play();
+                
+                playSound();
+                // if (!AudioSource.isPlaying)
+                //     AudioSource.Play();
             }
             else
             {
@@ -135,8 +136,9 @@ namespace Unity.FPS.Gameplay
                 // keeps the ratio between 0 and 1
                 CurrentFillRatio = Mathf.Clamp01(CurrentFillRatio);
 
-                if (AudioSource.isPlaying)
-                    AudioSource.Stop();
+                stopSound();
+                // if (AudioSource.isPlaying)
+                //     AudioSource.Stop();
             }
         }
 
@@ -149,6 +151,24 @@ namespace Unity.FPS.Gameplay
             IsJetpackUnlocked = true;
             m_LastTimeOfUse = Time.time;
             return true;
+        }
+        
+        public void playSound()
+        {
+            if (!PlayingSound)
+            {
+                AkSoundEngine.PostEvent("Jetpack", gameObject);
+                PlayingSound = true;
+            }
+        }
+        
+        public void stopSound()
+        {
+            if (PlayingSound)
+            {
+                AkSoundEngine.StopAll(gameObject);
+                PlayingSound = false;
+            }
         }
     }
 }

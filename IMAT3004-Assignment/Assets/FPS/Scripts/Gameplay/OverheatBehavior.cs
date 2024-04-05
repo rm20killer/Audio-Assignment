@@ -111,12 +111,12 @@ namespace Unity.FPS.Gameplay
 
             m_LastAmmoRatio = currentAmmoRatio;
         }
-        
+        uint soundID;
         void playSound()
         {
-            Debug.Log("Playing sound");
+            // Debug.Log("Playing sound");
             playingSound = true;
-            AkSoundEngine.PostEvent("Weapon_cooldown", gameObject);
+            soundID = AkSoundEngine.PostEvent("Weapon_cooldown", gameObject);
             //set playingSound to false after 1.5 second
             Invoke("stopSound", 1.5f);
         }
@@ -124,7 +124,7 @@ namespace Unity.FPS.Gameplay
         void stopSound()
         {
             playingSound = false;
-            AkSoundEngine.StopAll(gameObject);
+            AkSoundEngine.StopPlayingID(soundID);
         }
         
         

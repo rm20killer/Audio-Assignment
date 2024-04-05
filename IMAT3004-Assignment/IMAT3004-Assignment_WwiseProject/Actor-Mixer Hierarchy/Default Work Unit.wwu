@@ -367,50 +367,6 @@
 								</Sound>
 								<Folder Name="Charge" ID="{2721FF15-3893-496A-BBEA-C0D080D3C771}" ShortID="248117072">
 									<ChildrenList>
-										<Sound Name="Weapon_Charge" ID="{7DAD6EB7-BA54-447F-A4CE-2B628B93D125}" ShortID="496876177">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-13</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Weapons" ID="{0E17E321-C0F3-4913-839B-5DBFD74DFDDA}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Weapon_shots" ID="{5C752F0F-2CFB-4B1E-9000-F316AFF211C0}">
-													<PropertyList>
-														<Property Name="Color" Type="int16" Value="2"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="2.56084061047587"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.175400041813416"/>
-														<Property Name="OverrideColor" Type="bool" Value="True"/>
-														<Property Name="OverrideConversion" Type="bool" Value="True"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.50142435792284"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.79192914234252"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Low Quaility" ID="{D1AB222A-725C-49D3-B650-71DBA97CA954}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
-														</Reference>
-													</ReferenceList>
-													<Language>SFX</Language>
-													<AudioFile>Weapon_shots.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="553755816"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Weapon_shots" ID="{5C752F0F-2CFB-4B1E-9000-F316AFF211C0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Weapon_Release_Charge" ID="{977E9296-E415-4B2F-9852-4DB3E9B20480}" ShortID="321083155">
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
@@ -471,6 +427,251 @@
 												<ActiveSource Name="Weapon_shots" ID="{C9368F84-0827-4588-AADB-3505C7489EEE}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<BlendContainer Name="Weapon_charge_up" ID="{0DA81655-D364-4876-8DAC-1A50D5D9A9D4}" ShortID="788153597">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{07532254-70AF-4FAD-B6D4-C1FB5CE40E7F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Weapon_Charge" ID="{7DAD6EB7-BA54-447F-A4CE-2B628B93D125}" ShortID="496876177">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weapons" ID="{0E17E321-C0F3-4913-839B-5DBFD74DFDDA}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weapon_shots" ID="{5C752F0F-2CFB-4B1E-9000-F316AFF211C0}">
+															<PropertyList>
+																<Property Name="Color" Type="int16" Value="2"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.56084061047587"/>
+																<Property Name="OverrideColor" Type="bool" Value="True"/>
+																<Property Name="OverrideConversion" Type="bool" Value="True"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.50142435792284"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.53076549608402"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Low Quaility" ID="{D1AB222A-725C-49D3-B650-71DBA97CA954}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+																</Reference>
+															</ReferenceList>
+															<Language>SFX</Language>
+															<AudioFile>Weapon_shots.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="553755816"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weapon_shots" ID="{5C752F0F-2CFB-4B1E-9000-F316AFF211C0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wind_01" ID="{712574EE-EE03-46C9-867A-38D59A2C5F9A}" ShortID="35906249">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>37</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>34</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wind_1" ID="{81A11D10-79A0-4B0B-9FD2-7E737A3AE336}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.561"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.47932693333334"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.56640853333333"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Wind_1.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="895864449"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wind_1" ID="{81A11D10-79A0-4B0B-9FD2-7E737A3AE336}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Weapon_charge_loop" ID="{CE29BD84-0DA4-404F-8D57-33B3C3A8C757}" ShortID="713430963">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{71DAEA05-689D-49B2-B24F-2BE23F314FA0}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Weapon_Charge" ID="{10A3D4EF-1D11-4696-ACD4-D70EDADDF781}" ShortID="81933707">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weapons" ID="{0E17E321-C0F3-4913-839B-5DBFD74DFDDA}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weapon_shots" ID="{5B3F052E-ED5A-47D9-811C-7D67C470041D}">
+															<PropertyList>
+																<Property Name="Color" Type="int16" Value="2"/>
+																<Property Name="CrossfadeShape" Type="int16" Value="0"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00791404988662103"/>
+																<Property Name="FadeInShape" Type="int16" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00791404988662148"/>
+																<Property Name="FadeOutShape" Type="int16" Value="0"/>
+																<Property Name="OverrideColor" Type="bool" Value="True"/>
+																<Property Name="OverrideConversion" Type="bool" Value="True"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.05766247130152"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.44371094733118"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Low Quaility" ID="{D1AB222A-725C-49D3-B650-71DBA97CA954}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+																</Reference>
+															</ReferenceList>
+															<Language>SFX</Language>
+															<AudioFile>Weapon_shots.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="760466330"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weapon_shots" ID="{5B3F052E-ED5A-47D9-811C-7D67C470041D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wind_1" ID="{16B1B9AA-3160-4EAA-96EF-A9DDAF086DDB}" ShortID="592264300">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>37</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>34</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wind_1" ID="{1B08F4FA-9CE7-40CD-A700-209D0C9710D6}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.47932693333334"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.66248853333333"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Wind_1.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="31319335"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wind_1" ID="{1B08F4FA-9CE7-40CD-A700-209D0C9710D6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Impact" ID="{47DB411A-BC60-4138-9DDD-527C74C5E118}" ShortID="535532497"/>
@@ -589,6 +790,238 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="minigun_overheat" ID="{B8044881-424C-4250-B0C2-020C50C5097A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Folder Name="Effects" ID="{BC9C4B96-2B54-48E9-BB11-9EFC937B3578}" ShortID="530318539">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Sound Name="FuelCellsCooled" ID="{B6DEC685-C495-4760-8C8A-18FB7FEE57C5}" ShortID="237614331">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FuelCellsCooled" ID="{FD182CB0-443B-43E8-B2C7-015EE3B8B917}">
+													<Language>SFX</Language>
+													<AudioFile>FuelCellsCooled.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="771774988"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FuelCellsCooled" ID="{FD182CB0-443B-43E8-B2C7-015EE3B8B917}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Scratching" ID="{F2A6B376-B4E8-4C4C-ACEE-6A7EB749994E}" ShortID="1035274492">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Scratching" ID="{8D245BF3-1FDD-4BB7-8372-150004A140A5}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00905666666666667"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.291555"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Scratching.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="302301301"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Scratching" ID="{8D245BF3-1FDD-4BB7-8372-150004A140A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Jetpack" ID="{AEA156DB-86EC-4F89-83FA-1A959FD89374}" ShortID="32119170">
+							<ChildrenList>
+								<Sound Name="Jetpack" ID="{0A36D4DC-B5E8-4355-80F6-0A968382A7E6}" ShortID="687893299">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>38</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{698CF677-CAF3-4492-8B81-3EF2EE3C914E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jetpack" ID="{BAA91DA0-8234-4AEF-A5EB-14F15D90C961}">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0504576000000001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.832896"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+														<Conversion Name="Default Conversion Settings (Custom)" ID="{86388257-DA53-44EA-AFD8-CD4A990B6B99}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Mac">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Mac">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SRConversionQuality" Type="int32">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Windows">2</Value>
+																		<Value Platform="Mac">2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{CC59BC34-283D-4124-87DF-68B60FF1EDE6}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{CCDBE20D-AB87-4358-826E-25A176733E9B}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Language>SFX</Language>
+											<AudioFile>Jetpack.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="266360618"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Jetpack" ID="{BAA91DA0-8234-4AEF-A5EB-14F15D90C961}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Jetpack_Pickup" ID="{924BBFDE-697B-49B1-B09E-17F530C6A7D4}" ShortID="735020876">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>21</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{818E3586-0069-41DF-9DE5-9B59C1023ABD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jetpack_Pickup" ID="{E2C76180-76F2-47DE-9CF8-057D04488DB4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0119304"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.192212"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.1869096"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.7098588"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Jetpack_Pickup.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="877521368"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Jetpack_Pickup" ID="{E2C76180-76F2-47DE-9CF8-057D04488DB4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

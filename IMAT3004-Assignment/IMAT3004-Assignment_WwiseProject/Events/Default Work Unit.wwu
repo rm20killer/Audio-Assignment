@@ -31,10 +31,10 @@
 							<ChildrenList>
 								<Event Name="Weapon_Charge_buildup" ID="{1361214C-416B-4F89-81C3-FFA647B1E954}">
 									<ChildrenList>
-										<Action Name="" ID="{FFF9F5ED-A5D1-4E98-943E-D10012387F7D}" ShortID="89638815">
+										<Action Name="" ID="{450A22AF-8E82-4CA1-A457-DF49513DD897}" ShortID="265884381">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Weapon_Charge" ID="{7DAD6EB7-BA54-447F-A4CE-2B628B93D125}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+													<ObjectRef Name="Weapon_charge_up" ID="{0DA81655-D364-4876-8DAC-1A50D5D9A9D4}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -108,8 +108,88 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Folder Name="Fuelcell" ID="{98F58C85-CAA4-46FF-AD79-F7936EC111ED}" ShortID="686840962">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Event Name="CellMoving" ID="{BB01F1ED-5837-46FD-BDF3-84EF7B9D1FEB}">
+											<ChildrenList>
+												<Action Name="" ID="{ABB060E4-D695-4451-B491-297F44697A66}" ShortID="517136033">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Scratching" ID="{F2A6B376-B4E8-4C4C-ACEE-6A7EB749994E}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="FuelCellsCooled" ID="{50C22E57-76FD-494E-AEC2-8537BB270A7B}">
+											<ChildrenList>
+												<Action Name="" ID="{15DAC9EC-316A-4F9D-9E93-BDF89CD84D81}" ShortID="283021613">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FuelCellsCooled" ID="{B6DEC685-C495-4760-8C8A-18FB7FEE57C5}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Event Name="Play_Weapon_charge_loop" ID="{53923D43-E610-4F5F-A03F-55591413C090}">
+									<ChildrenList>
+										<Action Name="" ID="{F964DCA1-A8AE-4316-8CB4-7DE15AA6B7F5}" ShortID="426538073">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="0"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_charge_loop" ID="{CE29BD84-0DA4-404F-8D57-33B3C3A8C757}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F0036504-B966-4B82-9ADF-F0F77337A8FA}" ShortID="1010015795">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Weapon_charge_up" ID="{0DA81655-D364-4876-8DAC-1A50D5D9A9D4}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Jetpack" ID="{D313AF9E-A0B8-4BCF-BEE1-8C13475DEF0F}">
+							<ChildrenList>
+								<Action Name="" ID="{52136141-28E0-40CE-8E25-64C8D844E57E}" ShortID="649483164">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jetpack" ID="{0A36D4DC-B5E8-4355-80F6-0A968382A7E6}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Jetpack_Pickup" ID="{EF21DCA0-16AD-4226-BF9E-25F736115632}">
+							<ChildrenList>
+								<Action Name="" ID="{864B7C0F-2E42-4A65-8178-29BA120AAB7E}" ShortID="560831386">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jetpack_Pickup" ID="{924BBFDE-697B-49B1-B09E-17F530C6A7D4}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{8D73E353-4C0D-4F01-BBD3-DE2EB78561E0}" ShortID="177888207">
