@@ -66,8 +66,8 @@
 						</Property>
 						<Property Name="MaxSampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Windows">32000</Value>
-								<Value Platform="Mac">32000</Value>
+								<Value Platform="Windows">10000</Value>
+								<Value Platform="Mac">10000</Value>
 							</ValueList>
 						</Property>
 						<Property Name="MinSampleRate" Type="int32">

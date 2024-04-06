@@ -64,11 +64,13 @@ namespace Unity.FPS.Gameplay
 
         protected virtual void OnPicked(PlayerCharacterController playerController)
         {
+            AkSoundEngine.PostEvent("Play_Item_PickUp", gameObject);
             PlayPickupFeedback();
         }
 
         public void PlayPickupFeedback()
         {
+            
             if (m_HasPlayedFeedback)
                 return;
 

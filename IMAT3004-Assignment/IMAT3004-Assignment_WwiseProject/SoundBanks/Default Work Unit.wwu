@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{79AC8D6D-4CBA-4EB7-B3BB-A10D1DDA045D}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Game" ID="{247E0003-EEE1-446F-A473-792C7A247E62}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>5000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Enemy" ID="{81B79E26-C43B-40A9-9CEB-C59ED16D2D4B}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Env" ID="{7ACC9D45-4AF7-4F60-83B8-98AEE23EF4F0}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>

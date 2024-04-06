@@ -190,8 +190,41 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="Play_ImpactOnMetal" ID="{7FFC9081-8767-44EC-825F-B7A61A598762}">
+											<ChildrenList>
+												<Action Name="" ID="{56FB5941-B2E7-4BFC-AE99-2AD568AF161B}" ShortID="314474255">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ImpactOnMetal" ID="{72C2876C-712A-456C-9905-C0A56E9F016B}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
+								<Event Name="Play_Item_PickUp" ID="{181AC590-D737-4C0F-BCA6-8FD7A6404CBC}">
+									<ChildrenList>
+										<Action Name="" ID="{10664352-BE04-4032-A3BD-26FA53AC3AFF}" ShortID="572623284">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Item_PickUp" ID="{6012D384-0A2C-4DF5-8E3E-654AEAAB58EE}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Change_Weapon" ID="{9BE4FEC8-C5C5-4C11-B77C-6E8D1C33AAAB}">
+									<ChildrenList>
+										<Action Name="" ID="{1FF452DB-30D5-40C7-A473-221CF551A302}" ShortID="64060459">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Change_Weapon" ID="{3376BE29-F773-47A1-A922-18E46D5EDED4}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Jetpack" ID="{D313AF9E-A0B8-4BCF-BEE1-8C13475DEF0F}">
@@ -211,6 +244,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Jetpack_Pickup" ID="{924BBFDE-697B-49B1-B09E-17F530C6A7D4}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Landing" ID="{8E04C492-BDBA-4D65-A8B4-E4CFF37AD088}">
+							<ChildrenList>
+								<Action Name="" ID="{2278DDF3-92B0-4580-BFCC-7E9CBB892BBC}" ShortID="845930072">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jumping" ID="{7CEDD486-B0F5-4C1F-A353-ADE1DA83D258}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -257,12 +301,15 @@
 				</Folder>
 				<Folder Name="Enemy" ID="{81B79E26-C43B-40A9-9CEB-C59ED16D2D4B}" ShortID="925986052">
 					<ChildrenList>
-						<Event Name="Enemy_Damage" ID="{19EFD826-D845-40CC-A2B8-9721714CE620}">
+						<Event Name="Enemy_Damage_1" ID="{19EFD826-D845-40CC-A2B8-9721714CE620}">
 							<ChildrenList>
-								<Action Name="" ID="{6B317CBC-4FC8-4C62-AD53-69262EC829E1}" ShortID="199264403">
+								<Action Name="" ID="{F79F3735-CACE-4660-92D6-5623C5219F5C}" ShortID="812044288">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Enemy_Damage_taken" ID="{150A18CE-4710-4AE7-8FF6-AC8BFBC3207D}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+											<ObjectRef Name="Play_ImpactOnMetal" ID="{7FFC9081-8767-44EC-825F-B7A61A598762}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -284,6 +331,17 @@
 								<Event Name="Drone_death" ID="{350D0111-CDBA-4B60-9D2D-68E28C0A04B2}"/>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Enemy_Shot" ID="{38AEECFF-7983-494F-B2EC-A82D04AEBA55}">
+							<ChildrenList>
+								<Action Name="" ID="{685E3CA0-CF82-4C51-BC15-EC9E23F803A1}" ShortID="909555144">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Enemy_Lazer" ID="{150A18CE-4710-4AE7-8FF6-AC8BFBC3207D}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Env" ID="{7ACC9D45-4AF7-4F60-83B8-98AEE23EF4F0}" ShortID="567911140">
@@ -296,6 +354,28 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="GasFire" ID="{9E0D23DA-8EC2-49AD-BBC5-458E94129036}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Fire" ID="{1A57B148-D222-42EF-9FA3-0986A97F0102}">
+									<ChildrenList>
+										<Action Name="" ID="{4FE16C0F-2980-4100-8546-E6EAF3322567}" ShortID="23181018">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fire" ID="{C4FE8BC1-2785-4C46-BA93-DE3EE604DB94}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Fire_1" ID="{5288499B-88B8-4825-9DC2-E2FF7421F10B}">
+									<ChildrenList>
+										<Action Name="" ID="{831CBE3E-E98A-4B99-A677-CEB00D3624CB}" ShortID="369423529">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fire_1" ID="{20D940CA-C048-4CF6-911C-D7BD16EC94F3}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

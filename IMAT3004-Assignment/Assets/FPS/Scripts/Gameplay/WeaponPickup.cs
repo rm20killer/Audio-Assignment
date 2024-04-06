@@ -32,7 +32,7 @@ namespace Unity.FPS.Gameplay
                     {
                         playerWeaponsManager.SwitchWeapon(true);
                     }
-
+                    AkSoundEngine.PostEvent("Play_Item_PickUp", gameObject);
                     PlayPickupFeedback();
                     Destroy(gameObject);
                 }

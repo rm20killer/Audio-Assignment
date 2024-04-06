@@ -197,7 +197,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584892458559033408
+    m_lastTime: -8584891897610114862
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -239,7 +239,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584892458559134024
+    m_lastTime: -8584891885300154682
     List:
     - name: CellMoving
       guid: edf101bb3758fd46bdf384ef7b9d1feb
@@ -330,7 +330,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6f4bbc168846de489142087dd29c6aec
       Path: Events\Default Work Unit\Enemy\Drone\Drone_hover_loop
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: Enemy
@@ -350,9 +350,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Enemy_Damage
+    - name: Enemy_Damage_1
       guid: 26d8ef1945d8cc40a2b89721714ce620
-      id: 555067025
+      id: 2405707301
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -363,10 +363,30 @@ MonoBehaviour:
       - ElementName: Enemy
         ObjectType: 4
         guid: 269eb7813bc4a9409cebc59ed16d2d4b
-      - ElementName: Enemy_Damage
+      - ElementName: Enemy_Damage_1
         ObjectType: 3
         guid: 26d8ef1945d8cc40a2b89721714ce620
-      Path: Events\Default Work Unit\Enemy\Enemy_Damage
+      Path: Events\Default Work Unit\Enemy\Enemy_Damage_1
+      maxAttenuation: 80
+      maxDuration: 0
+      minDuration: 0
+    - name: Enemy_Shot
+      guid: ffecae3883794f49b2eca82d04aeba55
+      id: 3598801546
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 269eb7813bc4a9409cebc59ed16d2d4b
+      - ElementName: Enemy_Shot
+        ObjectType: 3
+        guid: ffecae3883794f49b2eca82d04aeba55
+      Path: Events\Default Work Unit\Enemy\Enemy_Shot
       maxAttenuation: 0
       maxDuration: 0.15887819
       minDuration: 0.15480168
@@ -522,9 +542,78 @@ MonoBehaviour:
         ObjectType: 3
         guid: f889816ca2c26c4b8d5d02b9907fdd5e
       Path: Events\Default Work Unit\Player\Weapon\Impact\Play_Boom
-      maxAttenuation: 0
+      maxAttenuation: 500
       maxDuration: 2.241305
       minDuration: 1.8847053
+    - name: Play_Change_Weapon
+      guid: c8fee49bc5c5114cb77c6e8d1c33aaab
+      id: 2491293469
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Play_Change_Weapon
+        ObjectType: 3
+        guid: c8fee49bc5c5114cb77c6e8d1c33aaab
+      Path: Events\Default Work Unit\Player\Weapon\Play_Change_Weapon
+      maxAttenuation: 0
+      maxDuration: 0.23588072
+      minDuration: 0.18721865
+    - name: Play_Fire
+      guid: 48b1571a22d2ef429fa30986a97f0102
+      id: 3015324718
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Env
+        ObjectType: 4
+        guid: 459dcc7af74a604f83b898aee23ef4f0
+      - ElementName: Fire
+        ObjectType: 4
+        guid: 9e65d071f5a1a84fb6a6dccfbc5fdfe1
+      - ElementName: Play_Fire
+        ObjectType: 3
+        guid: 48b1571a22d2ef429fa30986a97f0102
+      Path: Events\Default Work Unit\Env\Fire\Play_Fire
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Fire_1
+      guid: 9b498852b88825489dc2e2ff7421f10b
+      id: 2073624414
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Env
+        ObjectType: 4
+        guid: 459dcc7af74a604f83b898aee23ef4f0
+      - ElementName: Fire
+        ObjectType: 4
+        guid: 9e65d071f5a1a84fb6a6dccfbc5fdfe1
+      - ElementName: Play_Fire_1
+        ObjectType: 3
+        guid: 9b498852b88825489dc2e2ff7421f10b
+      Path: Events\Default Work Unit\Env\Fire\Play_Fire_1
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
     - name: Play_GasLeak
       guid: 53c682f614af464086f7ed5ef9e0b8ac
       id: 1632583748
@@ -545,7 +634,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 53c682f614af464086f7ed5ef9e0b8ac
       Path: Events\Default Work Unit\Env\Fire\Play_GasLeak
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: Play_glass_002
@@ -591,9 +680,58 @@ MonoBehaviour:
         ObjectType: 3
         guid: d72bd80299ee40408a9f9c6cdeb56144
       Path: Events\Default Work Unit\Player\Weapon\Impact\Play_ImpactOnDirt
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0.102514066
       minDuration: 0.046070836
+    - name: Play_ImpactOnMetal
+      guid: 8190fc7f6787ec44825fb7a61a598762
+      id: 3840215476
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Impact
+        ObjectType: 4
+        guid: ecbd13c05b7d484791d19706857ad1d8
+      - ElementName: Play_ImpactOnMetal
+        ObjectType: 3
+        guid: 8190fc7f6787ec44825fb7a61a598762
+      Path: Events\Default Work Unit\Player\Weapon\Impact\Play_ImpactOnMetal
+      maxAttenuation: 80
+      maxDuration: 0.59231436
+      minDuration: 0.12355977
+    - name: Play_Item_PickUp
+      guid: 90c51a1837d70f4cbca68fd7a6404cbc
+      id: 2652605998
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Weapon
+        ObjectType: 4
+        guid: ef4ddbbabd94b74aa0ab1cd9945d5ce9
+      - ElementName: Play_Item_PickUp
+        ObjectType: 3
+        guid: 90c51a1837d70f4cbca68fd7a6404cbc
+      Path: Events\Default Work Unit\Player\Weapon\Play_Item_PickUp
+      maxAttenuation: 0
+      maxDuration: 0.093810685
+      minDuration: 0.072756976
     - name: Play_Jetpack_Pickup
       guid: a0dc21efad162642bf9e25f736115632
       id: 3747290063
@@ -614,6 +752,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.58699065
       minDuration: 0.49359828
+    - name: Play_Landing
+      guid: 92c4048ebabd654da8b4e4cff37ad088
+      id: 2323405115
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Play_Landing
+        ObjectType: 3
+        guid: 92c4048ebabd654da8b4e4cff37ad088
+      Path: Events\Default Work Unit\Player\Play_Landing
+      maxAttenuation: 0
+      maxDuration: 0.34871155
+      minDuration: 0.18595743
     - name: Play_Player_footstep
       guid: 67b1b4f3f73394498fa8c34e192219b5
       id: 1724675634
@@ -1030,7 +1188,7 @@ MonoBehaviour:
     m_lastTime: -8584929948778185123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d000000190000001b0000001f000000200000002100000022000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000000d000000190000001b0000001f000000200000002100000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

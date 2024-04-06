@@ -1,6 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
 	464717451	Weapon_cooldown			\Default Work Unit\Player\Weapon\Weapon_cooldown	
-	555067025	Enemy_Damage			\Default Work Unit\Enemy\Enemy_Damage	
 	851403683	Drone_hover_loop			\Default Work Unit\Enemy\Drone\Drone_hover_loop	
 	899494556	Weapon_shot_1			\Default Work Unit\Player\Weapon\Weapon_shot_1	
 	983539040	Play_ImpactOnDirt			\Default Work Unit\Player\Weapon\Impact\Play_ImpactOnDirt	
@@ -8,13 +7,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	1632583748	Play_GasLeak			\Default Work Unit\Env\Fire\Play_GasLeak	
 	1721627779	Weapon_charge_stop			\Default Work Unit\Player\Weapon\Weapon_charge_stop	
 	1724675634	Play_Player_footstep			\Default Work Unit\Player\Play_Player_footstep	
+	2073624414	Play_Fire_1			\Default Work Unit\Env\Fire\Play_Fire_1	
 	2074073782	Player_Damage			\Default Work Unit\Player\Player_Damage	
 	2099880966	Play_Weapon_charge_loop			\Default Work Unit\Player\Weapon\Play_Weapon_charge_loop	
 	2134580640	Weapon_shot			\Default Work Unit\Player\Weapon\Weapon_shot	
+	2323405115	Play_Landing			\Default Work Unit\Player\Play_Landing	
+	2405707301	Enemy_Damage_1			\Default Work Unit\Enemy\Enemy_Damage_1	
+	2491293469	Play_Change_Weapon			\Default Work Unit\Player\Weapon\Play_Change_Weapon	
+	2652605998	Play_Item_PickUp			\Default Work Unit\Player\Weapon\Play_Item_PickUp	
 	2680315389	Jetpack			\Default Work Unit\Player\Jetpack	
 	2723833262	Weapon_charge_release			\Default Work Unit\Player\Weapon\Weapon_charge_release	
+	3015324718	Play_Fire			\Default Work Unit\Env\Fire\Play_Fire	
 	3108093142	Weapon_Charge_buildup			\Default Work Unit\Player\Weapon\Weapon_Charge_buildup	
+	3598801546	Enemy_Shot			\Default Work Unit\Enemy\Enemy_Shot	
 	3747290063	Play_Jetpack_Pickup			\Default Work Unit\Player\Play_Jetpack_Pickup	
+	3840215476	Play_ImpactOnMetal			\Default Work Unit\Player\Weapon\Impact\Play_ImpactOnMetal	
 	3879926930	Drone_death			\Default Work Unit\Enemy\Drone\Drone_death	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -26,28 +33,42 @@ Switch	ID	Name	Switch Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	31319335	Wind_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Wind_1_A1CCFF58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_charge_loop\Wind_1		209676
+	46734347	impactMetal_heavy_000	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactMetal_heavy_000_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactMetal_heavy_000		8004
 	81886793	ImpactOnDirt_3	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\ImpactEffect\ImpactOnDirt_3_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnDirt\ImpactOnDirt_3		13944
 	88959328	Metal_Footstep_2	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Metal\Metal_Footstep_2_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Metal\Metal_Footstep_2		32428
+	107097470	impactPlate_heavy_004	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactPlate_heavy_004_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactPlate_heavy_004		80600
 	110136579	Sand_Footstep_4	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Sand_Footstep_4_8CB8A47E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Sand\Sand_Footstep_4		36352
+	119942600	Sand_Footstep_5	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Jumping\Sand_Footstep_5_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Jumping\Sand_Footstep_5		39860
+	253488685	Change_Weapon	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Change_Weapon_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Change_Weapon		40444
 	266360618	Jetpack	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Jetpack_3AC4EF1D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jetpack\Jetpack		25134
 	275477400	Metal_Footstep_3	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Metal\Metal_Footstep_3_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Metal\Metal_Footstep_3		26224
 	310047732	Weapon_shots_01	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shots_31C3932F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Weapon_shots_01		121412
+	376022473	impactPlate_heavy_000	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactPlate_heavy_000_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactPlate_heavy_000		86296
+	385576855	impactMetal_heavy_004	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactMetal_heavy_004_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactMetal_heavy_004		4284
 	401182583	Weapon_shots	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shot_1_A65ED1F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Weapon_shots		17556
 	425439592	Sand_Footstep_3	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Sand_Footstep_3_6695EE4E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Sand\Sand_Footstep_3		26216
+	441135748	impactPlate_heavy_003	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactPlate_heavy_003_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactPlate_heavy_003		33084
 	459738931	Metal_Footstep_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Metal\Metal_Footstep_1_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Metal\Metal_Footstep_1		33408
-	470796395	Explosion	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Explosion_C004B05D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\Explosion		191784
-	532477279	Enemy_Damage_taken	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Enemy_Damage_taken_51BD11F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Damage\Enemy_Damage_taken		30160
+	470796395	Explosion	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Explosion_4E2E91B4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\Explosion		191784
+	510544665	impactPlate_heavy_002	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactPlate_heavy_002_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactPlate_heavy_002		87272
+	532477279	Enemy_Lazer	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Enemy_Damage_taken_51BD11F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Damage\Enemy_Lazer		30160
 	549236246	Weapon_Release_Charge	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shots_E5904475.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_Release_Charge		193168
-	553755816	Weapon_Charge	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shots_0FDBB137.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_charge_up\Weapon_Charge		311876
-	559817330	GasFire	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\GasFire_17A6CB65.wem		\Actor-Mixer Hierarchy\Default Work Unit\Env\Fire\GasFire		298816
+	553755816	Weapon_Charge	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shots_34AA4031.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_charge_up\Weapon_Charge		97524
+	559817330	GasFire	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\GasFire_CFEEC6C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Env\Fire\GasFire		180672
 	573049767	minigun_overheat	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\minigun_overheat_5D05B779.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\minigun_overheat		86700
 	589007081	ImpactOnDirt_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\ImpactEffect\ImpactOnDirt_1_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnDirt\ImpactOnDirt_1		8840
+	621854714	spaceEngineLow_002	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\spaceEngineLow_002_FA709363.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Drone\Drone_hover\spaceEngineLow_002		60096
+	711459102	Fire_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Fire_1_7F4B14AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Env\Fire\Fire_1		441096
 	724166258	Damage_taken_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Damage_taken_1_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Damage\Damage_taken_1		75288
+	729177238	Metal_jump	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Jumping\Metal_jump_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Jumping\Metal_jump		1348
 	756819456	drone009_gloomy drone	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\drone009_gloomy drone_2E0478EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Drone\Drone_hover\drone009_gloomy drone		135492
-	760466330	Weapon_Charge	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shots_DE23E3BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_charge_loop\Weapon_Charge		49508
+	760466330	Weapon_Charge	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shots_003FA4F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_charge_loop\Weapon_Charge		15536
 	804659850	ImpactOnDirt_2	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\ImpactEffect\ImpactOnDirt_2_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnDirt\ImpactOnDirt_2		14672
+	831599864	Fire	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Fire_7F4B14AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Env\Fire\Fire		441096
 	877521368	Jetpack_Pickup	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Jetpack_Pickup_F8982141.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jetpack\Jetpack_Pickup		50300
 	895864449	Wind_01	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Wind_1_0F178231.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_charge_up\Wind_01		392456
 	910620604	Sand_Footstep_5	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Sand_Footstep_5_25D7179D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Sand\Sand_Footstep_5		39860
+	1001672082	impactPlate_heavy_001	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactPlate_heavy_001_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactPlate_heavy_001		33640
+	1036426807	Item_PickUp	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Item_PickUp_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Item_PickUp		9960
 	1071062885	Drone_hoover	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Drone_hoover_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Drone\Drone_hover\Drone_hoover		578032
 

@@ -255,13 +255,13 @@ namespace Unity.FPS.Gameplay
                     if (OnSwitchedToWeapon != null)
                     {
                         OnSwitchedToWeapon.Invoke(newWeapon);
-                    }
-                }
+                    } }
                 // otherwise, remember we are putting down our current weapon for switching to the next one
                 else
                 {
                     m_WeaponSwitchState = WeaponSwitchState.PutDownPrevious;
                 }
+                AkSoundEngine.PostEvent("Play_Change_Weapon", gameObject);
             }
         }
 

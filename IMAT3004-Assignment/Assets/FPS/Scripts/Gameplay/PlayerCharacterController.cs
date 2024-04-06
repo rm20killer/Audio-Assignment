@@ -203,10 +203,12 @@ namespace Unity.FPS.Gameplay
 
                     // fall damage SFX
                     // AudioSource.PlayOneShot(FallDamageSfx);
+                    AkSoundEngine.PostEvent("Play_Landing", this.gameObject);
                     AkSoundEngine.PostEvent("Player_Damage", this.gameObject);
                 }
                 else
                 {
+                    AkSoundEngine.PostEvent("Play_Landing", this.gameObject);
                     // land SFX
                     // AudioSource.PlayOneShot(LandSfx);
                 }

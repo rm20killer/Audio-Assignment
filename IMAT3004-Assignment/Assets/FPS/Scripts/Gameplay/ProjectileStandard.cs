@@ -243,7 +243,11 @@ namespace Unity.FPS.Gameplay
             // impact vfx
             if (ImpactVfx)
             {
-                if(collider.gameObject.name == "Terrain")
+                if(collider.gameObject.name.StartsWith("Enemy_")|| collider.gameObject.name.StartsWith("MetalPlatform") || collider.gameObject.name.StartsWith("CrashedShip"))
+                {
+                    AkSoundEngine.PostEvent("Play_ImpactOnMetal", gameObject);
+                }
+                else
                 {
                     AkSoundEngine.PostEvent("Play_ImpactOnDirt", gameObject);
                 }
