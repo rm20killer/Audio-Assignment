@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{3BFFEF53-51F1-9E83-3D2B-6D95C5B47F3E}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{44B9CB56-64B4-CD3C-E08C-569B6A22163C}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
@@ -103,7 +103,7 @@
 				</File>
 				<File Id="559817330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GasFire.wav</ShortName>
-					<CachePath>SFX/GasFire_CFEEC6C8.wem</CachePath>
+					<CachePath>SFX/GasFire_591380BA.wem</CachePath>
 				</File>
 				<File Id="573049767" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>minigun_overheat.wav</ShortName>
@@ -398,6 +398,87 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{36A673FD-F8E7-B15B-F2EA-7089BDCF7D21}">
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<Media>
+				<File Id="136305546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Space - 95 BPM D Min Reversed Sample.wav</ShortName>
+					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Reversed Sample_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="136851506" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - LIFE - Vinyl Crackle 7.wav</ShortName>
+					<CachePath>SFX/Cymatics - LIFE - Vinyl Crackle 7_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="148079954" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cinematic SFX - Wind Atmos v2.wav</ShortName>
+					<CachePath>SFX/Cinematic SFX - Wind Atmos v2_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="181894958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Space - 95 BPM D Min Flute.wav</ShortName>
+					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Flute_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="207422216" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Space - 95 BPM D Min Reese.wav</ShortName>
+					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Reese_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="241205388" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Space - 95 BPM D Min Donk.wav</ShortName>
+					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Donk_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="502684019" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - LIFE - Vinyl Crackle 30.wav</ShortName>
+					<CachePath>SFX/Cymatics - LIFE - Vinyl Crackle 30_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="709344048" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cinematic SFX - Wind Atmos v1.wav</ShortName>
+					<CachePath>SFX/Cinematic SFX - Wind Atmos v1_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="709498254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Space - 95 BPM D Min Vocals.wav</ShortName>
+					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Vocals_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="755931386" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - LIFE - Vinyl Crackle 19.wav</ShortName>
+					<CachePath>SFX/Cymatics - LIFE - Vinyl Crackle 19_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="769150609" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - LIFE - Vinyl Crackle 12.wav</ShortName>
+					<CachePath>SFX/Cymatics - LIFE - Vinyl Crackle 12_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="815702128" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cinematic SFX - SciFi Atmos.wav</ShortName>
+					<CachePath>SFX/Cinematic SFX - SciFi Atmos_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="1064750463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Space - 95 BPM D Min Arp.wav</ShortName>
+					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Arp_7F4B14AA.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1562304622" Name="Play_Ambient" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="136851506"/>
+						<MediaRef Id="148079954"/>
+						<MediaRef Id="502684019"/>
+						<MediaRef Id="709344048"/>
+						<MediaRef Id="755931386"/>
+						<MediaRef Id="769150609"/>
+						<MediaRef Id="815702128"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="699373251" Name="Play_Explore" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="136305546"/>
+						<MediaRef Id="181894958"/>
+						<MediaRef Id="207422216"/>
+						<MediaRef Id="241205388"/>
+						<MediaRef Id="709498254"/>
+						<MediaRef Id="1064750463"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9ED2678D-9F30-B8AA-213C-634881610F47}</FileHash>
+	<FileHash>{82D0D2DF-7E59-9590-1981-10B6D8863CE5}</FileHash>
 </SoundBanksInfo>

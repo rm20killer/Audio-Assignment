@@ -18,8 +18,10 @@ namespace AK
         static const AkUniqueID ENEMY_DAMAGE_1 = 2405707301U;
         static const AkUniqueID ENEMY_SHOT = 3598801546U;
         static const AkUniqueID JETPACK = 2680315389U;
+        static const AkUniqueID PLAY_AMBIENT = 1562304622U;
         static const AkUniqueID PLAY_BOOM = 1357519519U;
         static const AkUniqueID PLAY_CHANGE_WEAPON = 2491293469U;
+        static const AkUniqueID PLAY_EXPLORE = 699373251U;
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_FIRE_1 = 2073624414U;
         static const AkUniqueID PLAY_GASLEAK = 1632583748U;
@@ -66,6 +68,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID GAME = 702482391U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace BANKS
 
