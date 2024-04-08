@@ -1,3 +1,6 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	215992295	Player_Health			\Default Work Unit\Player_Health	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	694692527	VFX			\Default Work Unit\Master Audio Bus\VFX	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\VFX\Player	
@@ -5,8 +8,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1467963052	Weapons			\Default Work Unit\Master Audio Bus\VFX\Player\Weapons	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	2299321487	Enemy			\Default Work Unit\Master Audio Bus\VFX\Enemy	
+	2848655986	Player_Effect			\Default Work Unit\Master Audio Bus\Player_Effect	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2098638826	Underground_Parking1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

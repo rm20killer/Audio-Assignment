@@ -2798,6 +2798,7 @@ GameObject:
   - component: {fileID: 1382602573}
   - component: {fileID: 1382602572}
   - component: {fileID: 1382602575}
+  - component: {fileID: 1382602576}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -2892,7 +2893,37 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cac281a10568b164ab57e7f7d332c982,
+    WwiseObjectReference: {fileID: 11400000, guid: c15335068d5b4ea4d981118813985e29,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1382602576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382602571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e839637322ee941bf049076ea26648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4ecea4e7884dad24a85def5c4fc0dc81,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -5560,6 +5591,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2729281214152228934}
+    - targetCorrespondingSourceObject: {fileID: 7253983127304857660, guid: 761cdc9e4e883334cbdcea062d0befa7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2729281214152228956}
     - targetCorrespondingSourceObject: {fileID: 7442781921941657531, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
       insertIndex: -1
@@ -5619,6 +5654,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15aa80708c5b31499f62c31617a1d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2729281214152228956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729281214152228921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfbffdfb435efe240b61d1e1d3d6d4d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 26b8e220a7d5fe745a1fba199c6b359b,
+      type: 2}
+  health: {fileID: 0}
 --- !u!1 &2729281214224612181
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{2F1C74BF-BE50-4FAA-8212-BD21D29DEC42}" SchemaVersion="110">
 	<InteractiveMusic>
 		<WorkUnit Name="Background ambient" ID="{2F1C74BF-BE50-4FAA-8212-BD21D29DEC42}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="17"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Ambient" ID="{39FE9FF3-08F1-48EA-AF07-DB96CF1E1790}" ShortID="5361156">
 					<PropertyList>

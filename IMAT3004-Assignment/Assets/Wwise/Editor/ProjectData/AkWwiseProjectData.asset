@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f73428f5fbd82641a5075ee77529b764
     GuidInternal: 
-    m_lastTime: -8584911716798781040
+    m_lastTime: -8584890689406627985
     List:
     - name: Enemy
       guid: 3d5e91222d97614d9060a67254ee966e
@@ -128,6 +128,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8f360d72fe48b4e8a9ee60b4785b04e
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VFX\Player
+    - name: Player_Effect
+      guid: e25398e47112a147a72f14ccaaa0bf1b
+      id: 2848655986
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f73428f5fbd82641a5075ee77529b764
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Player_Effect
+        ObjectType: 2
+        guid: e25398e47112a147a72f14ccaaa0bf1b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player_Effect
     - name: UI
       guid: d5c8497544f52e4ca3300cd2b280ab02
       id: 1551306167
@@ -197,7 +214,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584890790804245786
+    m_lastTime: -8584890739404946728
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -253,7 +270,7 @@ MonoBehaviour:
     ParentPath: Events\Background
     guid: d9b16c71ae96df448772e9ae65b0b614
     GuidInternal: 
-    m_lastTime: -8584890790804017306
+    m_lastTime: -8584890739597103891
     List:
     - name: Play_Ambient
       guid: b0089ae13180f64290c633db7b9da019
@@ -272,9 +289,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_CombatMusic
-      guid: bdb5b7b70c12254a95b1c006369a44fb
-      id: 11415363
+    - name: Play_Explore
+      guid: 26547f16b5aa9040886bb172116146b2
+      id: 699373251
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -282,10 +299,10 @@ MonoBehaviour:
       - ElementName: Background
         ObjectType: 12
         guid: d9b16c71ae96df448772e9ae65b0b614
-      - ElementName: Play_CombatMusic
+      - ElementName: Play_Explore
         ObjectType: 3
-        guid: bdb5b7b70c12254a95b1c006369a44fb
-      Path: Events\Background\Play_CombatMusic
+        guid: 26547f16b5aa9040886bb172116146b2
+      Path: Events\Background\Play_Explore
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -300,7 +317,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584890790804118461
+    m_lastTime: -8584890707598668385
     List:
     - name: CellMoving
       guid: edf101bb3758fd46bdf384ef7b9d1feb
@@ -718,6 +735,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.14065138
       minDuration: 0.11163507
+    - name: Play_heartbeat
+      guid: 57f6a6c55ffb0e459f798754ac1ea8a5
+      id: 3765695918
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Play_heartbeat
+        ObjectType: 3
+        guid: 57f6a6c55ffb0e459f798754ac1ea8a5
+      Path: Events\Default Work Unit\Player\Play_heartbeat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_ImpactOnDirt
       guid: d72bd80299ee40408a9f9c6cdeb56144
       id: 983539040
@@ -953,6 +990,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.62239045
       minDuration: 0.55448675
+    - name: Set_Game_Parameter_Player_Health
+      guid: df9ed62fdc78774fb55d127f4167d7da
+      id: 1291792009
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Player
+        ObjectType: 4
+        guid: 218d43b7d161a54f8d2d0a42e89da0a6
+      - ElementName: Set_Game_Parameter_Player_Health
+        ObjectType: 3
+        guid: df9ed62fdc78774fb55d127f4167d7da
+      Path: Events\Default Work Unit\Player\Set_Game_Parameter_Player_Health
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: UI
       guid: 53e3738d0d4c014fbbd3de2eb78561e0
       id: 1551306167
@@ -1140,7 +1197,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 312d4355cd6db443a8f51e2fc767a94f
     GuidInternal: 
-    m_lastTime: -8584893687465863535
+    m_lastTime: -8584890680844070896
     List:
     - name: IsPlaying
       guid: 6df689226358e140bd29b38be02c957c
@@ -1156,6 +1213,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 6df689226358e140bd29b38be02c957c
       Path: Game Parameters\Default Work Unit\IsPlaying
+    - name: Player_Health
+      guid: ba148dc979140547a1a28cde929c29ab
+      id: 215992295
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 312d4355cd6db443a8f51e2fc767a94f
+      - ElementName: Player_Health
+        ObjectType: 13
+        guid: ba148dc979140547a1a28cde929c29ab
+      Path: Game Parameters\Default Work Unit\Player_Health
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1182,7 +1253,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: be3284cd4673b241a1d80aa98e006a69
     GuidInternal: 
-    m_lastTime: -8584897681056702473
+    m_lastTime: -8584890680843976633
     List:
     - name: Footsteps
       guid: 50e2e26ede880148ba5ac3d581fcace3
@@ -1249,7 +1320,7 @@ MonoBehaviour:
     m_lastTime: -8584929948778185123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000000d0000000e000000190000001b0000001f000000200000002100000022000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000e000000190000001b0000001c0000001d0000001f000000200000002100000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

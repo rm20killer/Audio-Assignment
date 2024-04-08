@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	851403683	Drone_hover_loop			\Default Work Unit\Enemy\Drone\Drone_hover_loop	
 	899494556	Weapon_shot_1			\Default Work Unit\Player\Weapon\Weapon_shot_1	
 	983539040	Play_ImpactOnDirt			\Default Work Unit\Player\Weapon\Impact\Play_ImpactOnDirt	
+	1291792009	Set_Game_Parameter_Player_Health			\Default Work Unit\Player\Set_Game_Parameter_Player_Health	
 	1357519519	Play_Boom			\Default Work Unit\Player\Weapon\Impact\Play_Boom	
 	1632583748	Play_GasLeak			\Default Work Unit\Env\Fire\Play_GasLeak	
 	1721627779	Weapon_charge_stop			\Default Work Unit\Player\Weapon\Weapon_charge_stop	
@@ -21,6 +22,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3108093142	Weapon_Charge_buildup			\Default Work Unit\Player\Weapon\Weapon_Charge_buildup	
 	3598801546	Enemy_Shot			\Default Work Unit\Enemy\Enemy_Shot	
 	3747290063	Play_Jetpack_Pickup			\Default Work Unit\Player\Play_Jetpack_Pickup	
+	3765695918	Play_heartbeat			\Default Work Unit\Player\Play_heartbeat	
 	3840215476	Play_ImpactOnMetal			\Default Work Unit\Player\Weapon\Impact\Play_ImpactOnMetal	
 	3879926930	Drone_death			\Default Work Unit\Enemy\Drone\Drone_death	
 
@@ -30,6 +32,12 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	803837735	Sand	Footsteps			
 	2473969246	Metal	Footsteps			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	215992295	Player_Health			\Default Work Unit\Player_Health	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1021328037	Time Stretch (Custom)	Wwise Time Stretch			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	31319335	Wind_1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Wind_1_A1CCFF58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Charge\Weapon_charge_loop\Wind_1		209676
@@ -42,6 +50,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	253488685	Change_Weapon	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Change_Weapon_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Change_Weapon		40444
 	266360618	Jetpack	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Jetpack_3AC4EF1D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jetpack\Jetpack		25134
 	275477400	Metal_Footstep_3	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Metal\Metal_Footstep_3_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Metal\Metal_Footstep_3		26224
+	294557640	heartbeat	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\heartbeat_7F4B14AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\heartbeat		6140
 	310047732	Weapon_shots_01	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Weapon_shots_31C3932F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Weapon_shots_01		121412
 	376022473	impactPlate_heavy_000	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactPlate_heavy_000_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactPlate_heavy_000		86296
 	385576855	impactMetal_heavy_004	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\impactMetal_heavy_004_9F909560.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Weapon\Impact\ImpactOnMetal\impactMetal_heavy_004		4284

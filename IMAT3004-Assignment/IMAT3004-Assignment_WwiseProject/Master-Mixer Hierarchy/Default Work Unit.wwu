@@ -11,7 +11,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="VFX" ID="{88B9AAB9-585F-4C10-AA87-BDF141D94FC1}">
-							<ReferenceList/>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="Player" ID="{D760F3D8-E42F-4E8B-8A9E-E60B4785B04E}">
 									<ChildrenList>
@@ -21,9 +25,70 @@
 								<Bus Name="Enemy" ID="{22915E3D-972D-4D61-9060-A67254EE966E}"/>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="Environment" ID="{E78657E4-A539-4B23-ABF6-92FB706C0D17}"/>
-						<Bus Name="Music" ID="{330764BD-4AFC-487B-B13F-C6297AD0BFB3}"/>
+						<Bus Name="Environment" ID="{E78657E4-A539-4B23-ABF6-92FB706C0D17}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="Music" ID="{330764BD-4AFC-487B-B13F-C6297AD0BFB3}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{D6FA57B7-9A59-47E3-9C8E-EB453DE5C71D}" ShortID="206505703">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_Health" ID="{C98D14BA-1479-4705-A1A2-8CDE929C29AB}" WorkUnitID="{55432D31-6DCD-43B4-A8F5-1E2FC767A94F}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{9D98584D-19A9-4D3F-BBEE-82F8123F4AD5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-5</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 						<Bus Name="UI" ID="{7549C8D5-F544-4C2E-A330-0CD2B280AB02}"/>
+						<Bus Name="Player_Effect" ID="{E49853E2-1271-47A1-A72F-14CCAAA0BF1B}">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

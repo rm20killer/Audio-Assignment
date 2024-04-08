@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{44B9CB56-64B4-CD3C-E08C-569B6A22163C}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{5183788D-761C-532F-90C9-B4F0D3EBBD49}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
@@ -52,6 +52,10 @@
 				<File Id="275477400" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Metal\Metal_Footstep_3.wav</ShortName>
 					<CachePath>SFX/Metal/Metal_Footstep_3_9F909560.wem</CachePath>
+				</File>
+				<File Id="294557640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>heartbeat.wav</ShortName>
+					<CachePath>SFX/heartbeat_7F4B14AA.wem</CachePath>
 				</File>
 				<File Id="310047732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
@@ -170,6 +174,11 @@
 					<CachePath>SFX/Drone_hoover_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="1021328037" Name="Time Stretch (Custom)" LibName="Wwise Time Stretch" LibId="8519683"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="3879926930" Name="Drone_death" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="851403683" Name="Drone_hover_loop" MaxAttenuation="50" DurationType="Infinite">
@@ -218,6 +227,16 @@
 					<MediaRefs>
 						<MediaRef Id="559817330"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="3765695918" Name="Play_heartbeat" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="294557640"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1021328037"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="983539040" Name="Play_ImpactOnDirt" MaxAttenuation="80" DurationType="OneShot" DurationMin="0.046070836" DurationMax="0.102514066">
 					<MediaRefs>
@@ -294,6 +313,7 @@
 						<MediaRef Id="724166258"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1291792009" Name="Set_Game_Parameter_Player_Health" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3108093142" Name="Weapon_Charge_buildup" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="553755816"/>
@@ -322,6 +342,9 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="215992295" Name="Player_Health"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -331,26 +354,49 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DF67974B-FF85-A4F4-D0AD-F37A6C2A537C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5D034DA2-7035-BD63-F221-6566D34BD98F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="2098638826" Name="Underground_Parking1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="694692527" Name="VFX"/>
+				<Bus Id="694692527" Name="VFX">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2098638826"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="1069431850" Name="Player"/>
-				<Bus Id="1229948536" Name="Environment"/>
+				<Bus Id="1229948536" Name="Environment">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2098638826"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="1467963052" Name="Weapons"/>
 				<Bus Id="1551306167" Name="UI"/>
 				<Bus Id="2299321487" Name="Enemy"/>
+				<Bus Id="2848655986" Name="Player_Effect"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
-				<Bus Id="3991942870" Name="Music"/>
+				<Bus Id="3991942870" Name="Music">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2098638826"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="215992295" Name="Player_Health"/>
 				<GameParameter Id="728654205" Name="IsPlaying"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -398,7 +444,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{36A673FD-F8E7-B15B-F2EA-7089BDCF7D21}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{028842D1-D132-372B-4939-F130D5A6F56A}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -480,5 +526,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ABA0475C-C126-B071-8AFF-FAE2371F234B}</FileHash>
+	<FileHash>{42C100D1-8A25-76F9-7F21-87BCE37B1A30}</FileHash>
 </SoundBanksInfo>

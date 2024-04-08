@@ -2,17 +2,26 @@
 <WwiseDocument Type="WorkUnit" ID="{78562907-00D2-45DF-B0D3-8972B71436C6}" SchemaVersion="110">
 	<InteractiveMusic>
 		<WorkUnit Name="Music" ID="{78562907-00D2-45DF-B0D3-8972B71436C6}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Explore" ID="{EC2EDAE3-5F14-488A-9179-A7446D6605B1}" ShortID="110647208">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="95"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EC6E4A7-7E41-488C-ACB6-8A8AC3F64DEF}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+							<ObjectRef Name="Music" ID="{330764BD-4AFC-487B-B13F-C6297AD0BFB3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

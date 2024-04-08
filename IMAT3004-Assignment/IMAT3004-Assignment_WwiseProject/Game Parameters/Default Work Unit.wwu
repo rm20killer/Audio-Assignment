@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{55432D31-6DCD-43B4-A8F5-1E2FC767A94F}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="IsPlaying" ID="{2289F66D-5863-40E1-BD29-B38BE02C957C}"/>
+				<GameParameter Name="Player_Health" ID="{C98D14BA-1479-4705-A1A2-8CDE929C29AB}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -260,6 +260,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Set_Game_Parameter_Player_Health" ID="{2FD69EDF-78DC-4F77-B55D-127F4167D7DA}">
+							<ChildrenList>
+								<Action Name="" ID="{28F5CF8B-7815-43A5-9158-123A7A83473D}" ShortID="282979077">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Health" ID="{C98D14BA-1479-4705-A1A2-8CDE929C29AB}" WorkUnitID="{55432D31-6DCD-43B4-A8F5-1E2FC767A94F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_heartbeat" ID="{C5A6F657-FB5F-450E-9F79-8754AC1EA8A5}">
+							<ChildrenList>
+								<Action Name="" ID="{3DDE83F5-D4EF-461D-8CA1-2921C9FF1880}" ShortID="703494094">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="heartbeat" ID="{A582AE9D-074A-413C-B511-5A4C164E2A9A}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{8D73E353-4C0D-4F01-BBD3-DE2EB78561E0}" ShortID="177888207">

@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID PLAY_FIRE_1 = 2073624414U;
         static const AkUniqueID PLAY_GASLEAK = 1632583748U;
         static const AkUniqueID PLAY_GLASS_002 = 3931950989U;
+        static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
         static const AkUniqueID PLAY_IMPACTONDIRT = 983539040U;
         static const AkUniqueID PLAY_IMPACTONMETAL = 3840215476U;
         static const AkUniqueID PLAY_ITEM_PICKUP = 2652605998U;
@@ -36,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY_TICK_002 = 4138254406U;
         static const AkUniqueID PLAY_WEAPON_CHARGE_LOOP = 2099880966U;
         static const AkUniqueID PLAYER_DAMAGE = 2074073782U;
+        static const AkUniqueID SET_GAME_PARAMETER_PLAYER_HEALTH = 1291792009U;
         static const AkUniqueID WEAPON_CHARGE_BUILDUP = 3108093142U;
         static const AkUniqueID WEAPON_CHARGE_RELEASE = 2723833262U;
         static const AkUniqueID WEAPON_CHARGE_STOP = 1721627779U;
@@ -62,6 +64,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID ISPLAYING = 728654205U;
+        static const AkUniqueID PLAYER_HEALTH = 215992295U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -79,6 +82,7 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID PLAYER_EFFECT = 2848655986U;
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID VFX = 694692527U;
         static const AkUniqueID WEAPONS = 1467963052U;

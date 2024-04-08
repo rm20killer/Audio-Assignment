@@ -22,8 +22,8 @@ namespace Unity.FPS.Game
         public bool IsCritical() => GetRatio() <= CriticalHealthRatio;
 
         public string SoundEffect = "Enemy_Damage";
+        
         bool m_IsDead;
-
         void Start()
         {
             CurrentHealth = MaxHealth;
@@ -41,6 +41,7 @@ namespace Unity.FPS.Game
             {
                 OnHealed?.Invoke(trueHealAmount);
             }
+            
         }
 
         public void TakeDamage(float damage, GameObject damageSource)
