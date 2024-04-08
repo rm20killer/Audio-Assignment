@@ -214,7 +214,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584890739404946728
+    m_lastTime: -8584890171195006078
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -270,7 +270,7 @@ MonoBehaviour:
     ParentPath: Events\Background
     guid: d9b16c71ae96df448772e9ae65b0b614
     GuidInternal: 
-    m_lastTime: -8584890739597103891
+    m_lastTime: -8584890165440823593
     List:
     - name: Play_Ambient
       guid: b0089ae13180f64290c633db7b9da019
@@ -286,6 +286,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: b0089ae13180f64290c633db7b9da019
       Path: Events\Background\Play_Ambient
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Combat
+      guid: 180360372a1eff47990767bfa0640f2d
+      id: 513571230
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Background
+        ObjectType: 12
+        guid: d9b16c71ae96df448772e9ae65b0b614
+      - ElementName: Play_Combat
+        ObjectType: 3
+        guid: 180360372a1eff47990767bfa0640f2d
+      Path: Events\Background\Play_Combat
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -317,7 +334,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584890707598668385
+    m_lastTime: -8584890218237867387
     List:
     - name: CellMoving
       guid: edf101bb3758fd46bdf384ef7b9d1feb
@@ -1317,8 +1334,22 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: f256046b91ac6d42a9584e4ebad53cd9
     GuidInternal: 
-    m_lastTime: -8584929948778185123
-    List: []
+    m_lastTime: -8584890160777661176
+    List:
+    - name: Enemy_died
+      guid: f2d814965bf9014091438bb5ffc77746
+      id: 3874299596
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f256046b91ac6d42a9584e4ebad53cd9
+      - ElementName: Enemy_died
+        ObjectType: 14
+        guid: f2d814965bf9014091438bb5ffc77746
+      Path: Triggers\Default Work Unit\Enemy_died
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 050000000600000007000000090000000e000000190000001b0000001c0000001d0000001f000000200000002100000022000000
   AutoSyncSelection: 0

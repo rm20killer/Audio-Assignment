@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_AMBIENT = 1562304622U;
         static const AkUniqueID PLAY_BOOM = 1357519519U;
         static const AkUniqueID PLAY_CHANGE_WEAPON = 2491293469U;
+        static const AkUniqueID PLAY_COMBAT = 513571230U;
         static const AkUniqueID PLAY_EXPLORE = 699373251U;
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_FIRE_1 = 2073624414U;
@@ -66,6 +67,11 @@ namespace AK
         static const AkUniqueID ISPLAYING = 728654205U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID ENEMY_DIED = 3874299596U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

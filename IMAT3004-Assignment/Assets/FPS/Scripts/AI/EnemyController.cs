@@ -117,7 +117,7 @@ namespace Unity.FPS.AI
         WeaponController m_CurrentWeapon;
         WeaponController[] m_Weapons;
         NavigationModule m_NavigationModule;
-
+        
         void Start()
         {
             m_EnemyManager = FindObjectOfType<EnemyManager>();
@@ -226,6 +226,7 @@ namespace Unity.FPS.AI
             }
         }
 
+        private GameObject Player;
         void OnLostTarget()
         {
             onLostTarget.Invoke();
@@ -237,18 +238,43 @@ namespace Unity.FPS.AI
                 m_EyeRendererData.Renderer.SetPropertyBlock(m_EyeColorMaterialPropertyBlock,
                     m_EyeRendererData.MaterialIndex);
             }
+            
+            if (Player)
+            {
+                MusicHandler musicHandler = Player.GetComponent<MusicHandler>();
+                if (musicHandler)
+                {
+                    //add the enemy to the music handler
+                    musicHandler.RemoveEnemy(gameObject);
+                }
+            }
         }
 
         void OnDetectedTarget()
         {
             onDetectedTarget.Invoke();
-
+            
             // Set the eye default color and property block if the eye renderer is set
             if (m_EyeRendererData.Renderer != null)
             {
                 m_EyeColorMaterialPropertyBlock.SetColor("_EmissionColor", AttackEyeColor);
                 m_EyeRendererData.Renderer.SetPropertyBlock(m_EyeColorMaterialPropertyBlock,
                     m_EyeRendererData.MaterialIndex);
+            }
+            
+            
+            GameObject target = KnownDetectedTarget;
+            // Debug.Log( target.name);
+            if (target.name == "Player")
+            {
+                Player = target;
+                MusicHandler musicHandler = target.GetComponent<MusicHandler>();
+                if (musicHandler)
+                {
+                    //add the enemy to the music handler
+                    musicHandler.AddEnemy(gameObject);
+                }
+                
             }
         }
 
@@ -355,6 +381,17 @@ namespace Unity.FPS.AI
 
         void OnDie()
         {
+            AkSoundEngine.PostTrigger("Enemy_died", gameObject);
+            if (Player)
+            {
+                MusicHandler musicHandler = Player.GetComponent<MusicHandler>();
+                if (musicHandler)
+                {
+                    //add the enemy to the music handler
+                    musicHandler.RemoveEnemy(gameObject);
+                }
+            }
+            
             // spawn a particle system when dying
             var vfx = Instantiate(DeathVfx, DeathVfxSpawnPoint.position, Quaternion.identity);
             Destroy(vfx, 5f);

@@ -1,17 +1,28 @@
 Event	ID	Name			Wwise Object Path	Notes
+	513571230	Play_Combat			\Background\Play_Combat	
 	699373251	Play_Explore			\Background\Play_Explore	
 	1562304622	Play_Ambient			\Background\Play_Ambient	
 
+Trigger	ID	Name			Wwise Object Path	Notes
+	3874299596	Enemy_died			\Default Work Unit\Enemy_died	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	33717957	Cymatics - Apollo - 140 BPM F Min Pad	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Apollo - 140 BPM F Min Pad_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Combat\Apollo\Cymatics - Apollo - 140 BPM F Min Pad		2633236
+	36713210	Cymatics - Apollo - 140 BPM F Min Arp	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Apollo - 140 BPM F Min Arp_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Combat\Apollo\Cymatics - Apollo - 140 BPM F Min Arp		3949808
 	136305546	Cymatics - Space - 95 BPM D Min Reversed Sample	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Space - 95 BPM D Min Reversed Sample_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Explore\Space\Cymatics - Space - 95 BPM D Min Reversed Sample		1940352
 	136851506	Static	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - LIFE - Vinyl Crackle 7_7F4B14AA.wem		\Interactive Music Hierarchy\Background ambient\Ambient\Ambient\Static		219204
 	148079954	Wind	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cinematic SFX - Wind Atmos v2_7F4B14AA.wem		\Interactive Music Hierarchy\Background ambient\Ambient\Ambient\Wind		1642200
 	181894958	Cymatics - Space - 95 BPM D Min Flute	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Space - 95 BPM D Min Flute_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Explore\Space\Cymatics - Space - 95 BPM D Min Flute		646880
 	207422216	Cymatics - Space - 95 BPM D Min Reese	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Space - 95 BPM D Min Reese_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Explore\Space\Cymatics - Space - 95 BPM D Min Reese		242668
 	241205388	Cymatics - Space - 95 BPM D Min Donk	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Space - 95 BPM D Min Donk_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Explore\Space\Cymatics - Space - 95 BPM D Min Donk		121404
+	292399077	Cinematic SFX - Epic Hit v1	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cinematic SFX - Epic Hit v1_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Combat\Cinematic SFX - Riser (Short)\Cinematic SFX - Epic Hit v1		3637992
+	439075356	Cinematic SFX - Epic Hit v3	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cinematic SFX - Epic Hit v3_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Combat\Stinger 1\Cinematic SFX - Epic Hit v3		5153780
+	484617806	Cinematic SFX - Riser (Short)	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cinematic SFX - Riser (Short)_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Combat\Cinematic SFX - Riser (Short)\Cinematic SFX - Riser (Short)		675200
 	502684019	Static	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - LIFE - Vinyl Crackle 30_7F4B14AA.wem		\Interactive Music Hierarchy\Background ambient\Ambient\Ambient\Static		653788
+	530332753	Cymatics - Apollo - 140 BPM F Min Texture	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Apollo - 140 BPM F Min Texture_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Combat\Apollo\Cymatics - Apollo - 140 BPM F Min Texture		2633236
 	709344048	Wind	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cinematic SFX - Wind Atmos v1_7F4B14AA.wem		\Interactive Music Hierarchy\Background ambient\Ambient\Ambient\Wind		9549568
 	709498254	Cymatics - Space - 95 BPM D Min Vocals	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Space - 95 BPM D Min Vocals_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Explore\Space\Cymatics - Space - 95 BPM D Min Vocals		1940352
+	719784424	Cymatics - Apollo - 140 BPM F Min Bass	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - Apollo - 140 BPM F Min Bass_7F4B14AA.wem		\Interactive Music Hierarchy\Music\Combat\Apollo\Cymatics - Apollo - 140 BPM F Min Bass		877808
 	755931386	Static	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - LIFE - Vinyl Crackle 19_7F4B14AA.wem		\Interactive Music Hierarchy\Background ambient\Ambient\Ambient\Static		4405560
 	769150609	Static	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cymatics - LIFE - Vinyl Crackle 12_7F4B14AA.wem		\Interactive Music Hierarchy\Background ambient\Ambient\Ambient\Static		1648568
 	815702128	Cinematic SFX - SciFi Atmos	D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\.cache\Mac\SFX\Cinematic SFX - SciFi Atmos_7F4B14AA.wem		\Interactive Music Hierarchy\Background ambient\Ambient\Ambient\Cinematic SFX - SciFi Atmos		2880096

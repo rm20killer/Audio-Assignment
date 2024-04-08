@@ -17,9 +17,52 @@
 				<Event Name="Play_Explore" ID="{167F5426-AAB5-4090-886B-B172116146B2}">
 					<ChildrenList>
 						<Action Name="" ID="{03DC0472-9224-429B-8CD4-3565BF2F6F76}" ShortID="818447630">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Explore" ID="{EC2EDAE3-5F14-488A-9179-A7446D6605B1}" WorkUnitID="{78562907-00D2-45DF-B0D3-8972B71436C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B83C63BD-09B9-497C-B9C4-AD93C9BAFB2E}" ShortID="673716458">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Combat" ID="{6B60316E-29CE-48FE-893C-98E0B27C3BDA}" WorkUnitID="{78562907-00D2-45DF-B0D3-8972B71436C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Combat" ID="{37600318-1E2A-47FF-9907-67BFA0640F2D}">
+					<ChildrenList>
+						<Action Name="" ID="{BDF16267-712A-4A97-9C5A-BC3FEF3982E9}" ShortID="1054405725">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore" ID="{EC2EDAE3-5F14-488A-9179-A7446D6605B1}" WorkUnitID="{78562907-00D2-45DF-B0D3-8972B71436C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4573430F-CA25-4D94-966B-81D69234E89D}" ShortID="886614224">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Combat" ID="{6B60316E-29CE-48FE-893C-98E0B27C3BDA}" WorkUnitID="{78562907-00D2-45DF-B0D3-8972B71436C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

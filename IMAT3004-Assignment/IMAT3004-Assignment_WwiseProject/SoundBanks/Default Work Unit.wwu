@@ -31,6 +31,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Explore" ID="{167F5426-AAB5-4090-886B-B172116146B2}" WorkUnitID="{716CB1D9-96AE-44DF-8772-E9AE65B0B614}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambient" ID="{E19A08B0-8031-42F6-90C6-33DB7B9DA019}" WorkUnitID="{716CB1D9-96AE-44DF-8772-E9AE65B0B614}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Combat" ID="{37600318-1E2A-47FF-9907-67BFA0640F2D}" WorkUnitID="{716CB1D9-96AE-44DF-8772-E9AE65B0B614}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -444,10 +444,18 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{028842D1-D132-372B-4939-F130D5A6F56A}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{089F7EF0-3638-5800-367C-D1DABFE790FB}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
+				<File Id="33717957" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Apollo - 140 BPM F Min Pad.wav</ShortName>
+					<CachePath>SFX/Cymatics - Apollo - 140 BPM F Min Pad_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="36713210" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Apollo - 140 BPM F Min Arp.wav</ShortName>
+					<CachePath>SFX/Cymatics - Apollo - 140 BPM F Min Arp_7F4B14AA.wem</CachePath>
+				</File>
 				<File Id="136305546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cymatics - Space - 95 BPM D Min Reversed Sample.wav</ShortName>
 					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Reversed Sample_7F4B14AA.wem</CachePath>
@@ -472,9 +480,25 @@
 					<ShortName>Cymatics - Space - 95 BPM D Min Donk.wav</ShortName>
 					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Donk_7F4B14AA.wem</CachePath>
 				</File>
+				<File Id="292399077" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cinematic SFX - Epic Hit v1.wav</ShortName>
+					<CachePath>SFX/Cinematic SFX - Epic Hit v1_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="439075356" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cinematic SFX - Epic Hit v3.wav</ShortName>
+					<CachePath>SFX/Cinematic SFX - Epic Hit v3_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="484617806" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cinematic SFX - Riser (Short).wav</ShortName>
+					<CachePath>SFX/Cinematic SFX - Riser (Short)_7F4B14AA.wem</CachePath>
+				</File>
 				<File Id="502684019" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cymatics - LIFE - Vinyl Crackle 30.wav</ShortName>
 					<CachePath>SFX/Cymatics - LIFE - Vinyl Crackle 30_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="530332753" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Apollo - 140 BPM F Min Texture.wav</ShortName>
+					<CachePath>SFX/Cymatics - Apollo - 140 BPM F Min Texture_7F4B14AA.wem</CachePath>
 				</File>
 				<File Id="709344048" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cinematic SFX - Wind Atmos v1.wav</ShortName>
@@ -483,6 +507,10 @@
 				<File Id="709498254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cymatics - Space - 95 BPM D Min Vocals.wav</ShortName>
 					<CachePath>SFX/Cymatics - Space - 95 BPM D Min Vocals_7F4B14AA.wem</CachePath>
+				</File>
+				<File Id="719784424" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cymatics - Apollo - 140 BPM F Min Bass.wav</ShortName>
+					<CachePath>SFX/Cymatics - Apollo - 140 BPM F Min Bass_7F4B14AA.wem</CachePath>
 				</File>
 				<File Id="755931386" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cymatics - LIFE - Vinyl Crackle 19.wav</ShortName>
@@ -513,6 +541,17 @@
 						<MediaRef Id="815702128"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="513571230" Name="Play_Combat" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="33717957"/>
+						<MediaRef Id="36713210"/>
+						<MediaRef Id="292399077"/>
+						<MediaRef Id="439075356"/>
+						<MediaRef Id="484617806"/>
+						<MediaRef Id="530332753"/>
+						<MediaRef Id="719784424"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="699373251" Name="Play_Explore" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="136305546"/>
@@ -524,7 +563,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<Triggers>
+				<Trigger Id="3874299596" Name="Enemy_died"/>
+			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9F346DAA-D123-0D7A-0E5F-64E0500F0489}</FileHash>
+	<FileHash>{75159073-50B2-4ED8-36D9-ECB4E9844093}</FileHash>
 </SoundBanksInfo>
