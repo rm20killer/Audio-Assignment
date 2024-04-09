@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 namespace Unity.FPS.AI
 {
@@ -59,9 +61,7 @@ namespace Unity.FPS.AI
 
         [Tooltip("The duration of the flash on hit")]
         public float FlashOnHitDuration = 0.5f;
-
-        [Header("Sounds")] [Tooltip("Sound played when recieving damages")]
-        public AudioClip DamageTick;
+        
 
         [Header("VFX")] [Tooltip("The VFX prefab spawned when the enemy dies")]
         public GameObject DeathVfx;
@@ -276,6 +276,8 @@ namespace Unity.FPS.AI
                 }
                 
             }
+            
+            AkSoundEngine.PostEvent("Play_Robot_talk", gameObject);
         }
 
         public void OrientTowards(Vector3 lookPosition)
@@ -379,7 +381,7 @@ namespace Unity.FPS.AI
             }
         }
 
-        void OnDie()
+        private void OnDestroy()
         {
             AkSoundEngine.PostTrigger("Enemy_died", gameObject);
             if (Player)
@@ -391,7 +393,21 @@ namespace Unity.FPS.AI
                     musicHandler.RemoveEnemy(gameObject);
                 }
             }
-            
+        }
+
+        void OnDie()
+        {
+            // AkSoundEngine.PostTrigger("Enemy_died", gameObject);
+            // if (Player)
+            // {
+            //     MusicHandler musicHandler = Player.GetComponent<MusicHandler>();
+            //     if (musicHandler)
+            //     {
+            //         //add the enemy to the music handler
+            //         musicHandler.RemoveEnemy(gameObject);
+            //     }
+            // }
+            AkSoundEngine.PostEvent("Drone_death", gameObject);
             // spawn a particle system when dying
             var vfx = Instantiate(DeathVfx, DeathVfxSpawnPoint.position, Quaternion.identity);
             Destroy(vfx, 5f);

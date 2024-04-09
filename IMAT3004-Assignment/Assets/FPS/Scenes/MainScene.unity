@@ -387,6 +387,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2729281212887052391}
     m_Modifications:
+    - target: {fileID: 131329139154454436, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: Loop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e4be06c61ee9ad1448965c80116d733a,
+        type: 2}
     - target: {fileID: 2015434656898269652, guid: 25a1b0efadb966e44889fce712c8ff8d,
         type: 3}
       propertyPath: m_Name
@@ -699,6 +705,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2729281212887052391}
     m_Modifications:
+    - target: {fileID: 131329139154454436, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: Loop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e4be06c61ee9ad1448965c80116d733a,
+        type: 2}
     - target: {fileID: 2015434656898269652, guid: 25a1b0efadb966e44889fce712c8ff8d,
         type: 3}
       propertyPath: m_Name
@@ -1055,6 +1067,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2729281212887052391}
     m_Modifications:
+    - target: {fileID: 131329139154454436, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: Loop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e4be06c61ee9ad1448965c80116d733a,
+        type: 2}
     - target: {fileID: 2015434656898269652, guid: 25a1b0efadb966e44889fce712c8ff8d,
         type: 3}
       propertyPath: m_Name
@@ -1458,6 +1476,29 @@ Transform:
   m_Father: {fileID: 822632577}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &749369579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2015434656898269652, guid: e29d43f43cc5d82499dd9926e01847d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2121154246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &749369587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749369579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c5c0a83d0dfb745b6a2b7643ee640d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Loop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2b92ad45da6743d4490a58608e0166d4,
+      type: 2}
 --- !u!1 &800627120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,7 +2787,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2015434656898269652, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1483629732}
   m_SourcePrefab: {fileID: 100100000, guid: e29d43f43cc5d82499dd9926e01847d3, type: 3}
 --- !u!1 &1356194861
 GameObject:
@@ -3464,6 +3509,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462240150}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1483629724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2015434656898269652, guid: e29d43f43cc5d82499dd9926e01847d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1338058755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1483629732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483629724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c5c0a83d0dfb745b6a2b7643ee640d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Loop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2b92ad45da6743d4490a58608e0166d4,
+      type: 2}
 --- !u!1 &1528469131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,6 +4492,29 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &1896146613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2015434656898269652, guid: e29d43f43cc5d82499dd9926e01847d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2729281213748808806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1896146621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896146613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c5c0a83d0dfb745b6a2b7643ee640d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Loop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2b92ad45da6743d4490a58608e0166d4,
+      type: 2}
 --- !u!1 &1916835423 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1973075987484898, guid: bccc7a794e75b2a44a4b0dac69160b7b,
@@ -5012,7 +5103,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2015434656898269652, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 749369587}
   m_SourcePrefab: {fileID: 100100000, guid: e29d43f43cc5d82499dd9926e01847d3, type: 3}
 --- !u!1 &2729281212887052390
 GameObject:
@@ -5459,7 +5554,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2015434656898269652, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1896146621}
   m_SourcePrefab: {fileID: 100100000, guid: e29d43f43cc5d82499dd9926e01847d3, type: 3}
 --- !u!1001 &2729281214152228920
 PrefabInstance:
@@ -5489,6 +5588,12 @@ PrefabInstance:
       propertyPath: SoundEffect
       value: Player_Damage
       objectReference: {fileID: 0}
+    - target: {fileID: 1360575517897679518, guid: 761cdc9e4e883334cbdcea062d0befa7,
+        type: 3}
+      propertyPath: HealthRTPC.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 26b8e220a7d5fe745a1fba199c6b359b,
+        type: 2}
     - target: {fileID: 3122855503829242450, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
       propertyPath: m_StepOffset
@@ -5695,7 +5800,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2729281214152228921}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfbffdfb435efe240b61d1e1d3d6d4d1, type: 3}
   m_Name: 
@@ -5900,6 +6005,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2729281212887052391}
     m_Modifications:
+    - target: {fileID: 131329139154454436, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: Loop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e4be06c61ee9ad1448965c80116d733a,
+        type: 2}
     - target: {fileID: 2015434656898269652, guid: 25a1b0efadb966e44889fce712c8ff8d,
         type: 3}
       propertyPath: m_Name

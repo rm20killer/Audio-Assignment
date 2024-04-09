@@ -353,7 +353,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Drone_death" ID="{350D0111-CDBA-4B60-9D2D-68E28C0A04B2}"/>
+								<Event Name="Drone_death" ID="{350D0111-CDBA-4B60-9D2D-68E28C0A04B2}">
+									<ChildrenList>
+										<Action Name="" ID="{0C57A402-D238-439A-B4D0-7293A41A2E05}" ShortID="817453287">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="explosion-01" ID="{CFC10B85-4CB3-449D-BD8E-235E8B663304}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Enemy_Shot" ID="{38AEECFF-7983-494F-B2EC-A82D04AEBA55}">
@@ -362,6 +375,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Enemy_Lazer" ID="{150A18CE-4710-4AE7-8FF6-AC8BFBC3207D}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Robot_loop" ID="{B6A69DF7-BB6D-4F1B-9E5B-75F49CB6F0BD}">
+							<ChildrenList>
+								<Action Name="" ID="{83988DB9-25C5-4BA5-B24A-746C241BCC01}" ShortID="660581896">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_loop" ID="{150E2B44-DAEC-4DAE-A6D5-49656F5B8114}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Robot_talk" ID="{7607BE25-0060-4212-845D-839AD62C5737}">
+							<ChildrenList>
+								<Action Name="" ID="{E38639DC-DFF6-47B0-9A42-A7DC2C384352}" ShortID="626973219">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_talk" ID="{952756FD-5DCC-4DC7-B878-B4D364ADB256}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -408,6 +443,41 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Other" ID="{39C5341E-B15A-4AE7-B7B2-8FAEE8BFC7F8}" ShortID="719606533">
+					<ChildrenList>
+						<Event Name="Resume_All" ID="{B148BAA6-95A0-401C-BBBA-9DEC42936B90}">
+							<ChildrenList>
+								<Action Name="" ID="{49F93FC9-C93E-41EF-83C4-F5FD5BDA0EA8}" ShortID="562597518">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="10"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_All" ID="{AACB3B41-1265-4792-A77E-80707974C6CA}">
+							<ChildrenList>
+								<Action Name="" ID="{EC7200C2-5DC2-4F2E-8DD6-789531B0109A}" ShortID="974679182">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="8"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<EventActionException Name="" ID="{8F46EE46-6E1F-4BC6-8C69-587E502EC320}">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Music" ID="{330764BD-4AFC-487B-B13F-C6297AD0BFB3}" WorkUnitID="{F52834F7-D8FB-4126-A507-5EE77529B764}"/>
+												</Reference>
+											</ReferenceList>
+										</EventActionException>
+									</ChildrenList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

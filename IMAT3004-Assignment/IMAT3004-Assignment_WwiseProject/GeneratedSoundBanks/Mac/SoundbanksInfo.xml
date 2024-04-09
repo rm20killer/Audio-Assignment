@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{5183788D-761C-532F-90C9-B4F0D3EBBD49}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{38562ADB-19B5-1DE3-8F19-33B133D6C12B}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
@@ -89,6 +89,10 @@
 					<ShortName>Explosion.wav</ShortName>
 					<CachePath>SFX/Explosion_4E2E91B4.wem</CachePath>
 				</File>
+				<File Id="478980641" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>explosion-01.wav</ShortName>
+					<CachePath>SFX/explosion-01_E1890E16.wem</CachePath>
+				</File>
 				<File Id="510544665" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>impactPlate_heavy_002.wav</ShortName>
 					<CachePath>SFX/impactPlate_heavy_002_9F909560.wem</CachePath>
@@ -121,6 +125,10 @@
 					<ShortName>spaceEngineLow_002.wav</ShortName>
 					<CachePath>SFX/spaceEngineLow_002_FA709363.wem</CachePath>
 				</File>
+				<File Id="683638023" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mixkit-quick-bass-switch-2301.wav</ShortName>
+					<CachePath>SFX/mixkit-quick-bass-switch-2301_17EA65C2.wem</CachePath>
+				</File>
 				<File Id="711459102" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire_1.wav</ShortName>
 					<CachePath>SFX/Fire_1_7F4B14AA.wem</CachePath>
@@ -140,6 +148,10 @@
 				<File Id="760466330" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
 					<CachePath>SFX/Weapon_shots_003FA4F7.wem</CachePath>
+				</File>
+				<File Id="782269648" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Robot_talk.wav</ShortName>
+					<CachePath>SFX/Robot_talk_9F909560.wem</CachePath>
 				</File>
 				<File Id="804659850" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ImpactEffect\ImpactOnDirt_2.wav</ShortName>
@@ -180,7 +192,11 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="3879926930" Name="Drone_death" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3879926930" Name="Drone_death" MaxAttenuation="80" DurationType="OneShot" DurationMin="1.0515832" DurationMax="1.8954796">
+					<MediaRefs>
+						<MediaRef Id="478980641"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="851403683" Name="Drone_hover_loop" MaxAttenuation="50" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="621854714"/>
@@ -203,6 +219,7 @@
 						<MediaRef Id="266360618"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3864097025" Name="Pause_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1357519519" Name="Play_Boom" MaxAttenuation="500" DurationType="OneShot" DurationMin="1.8847053" DurationMax="2.241305">
 					<MediaRefs>
 						<MediaRef Id="470796395"/>
@@ -302,6 +319,17 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2815934519" Name="Play_Robot_loop" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="621854714"/>
+						<MediaRef Id="683638023"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1003153599" Name="Play_Robot_talk" MaxAttenuation="80" DurationType="OneShot" DurationMin="1.7817974" DurationMax="2.1189263">
+					<MediaRefs>
+						<MediaRef Id="782269648"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2099880966" Name="Play_Weapon_charge_loop" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="31319335"/>
@@ -313,6 +341,7 @@
 						<MediaRef Id="724166258"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3679762312" Name="Resume_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1291792009" Name="Set_Game_Parameter_Player_Health" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3108093142" Name="Weapon_Charge_buildup" DurationType="Infinite">
 					<MediaRefs>
@@ -354,7 +383,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{823E19C9-5585-945C-0467-1B44351A776E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{502A301B-D1F4-10CC-576B-172C72268257}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -444,7 +473,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{089F7EF0-3638-5800-367C-D1DABFE790FB}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{616864F6-1BEB-C39A-B1B5-5FD091A9FA4E}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -568,5 +597,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{75159073-50B2-4ED8-36D9-ECB4E9844093}</FileHash>
+	<FileHash>{79DA589F-7CA8-71C4-0DEA-B1FF2D41F986}</FileHash>
 </SoundBanksInfo>

@@ -214,7 +214,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6d8dac79ba4cb74eb3bba10d1dda045d
     GuidInternal: 
-    m_lastTime: -8584890171195006078
+    m_lastTime: -8584889123295212318
     List:
     - name: Game
       guid: 03007e24e1ee6f44a473792c7a247e62
@@ -334,7 +334,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2fb8941b4aa806499c8e947f47d0e7a8
     GuidInternal: 
-    m_lastTime: -8584890218237867387
+    m_lastTime: -8584889039549515932
     List:
     - name: CellMoving
       guid: edf101bb3758fd46bdf384ef7b9d1feb
@@ -402,9 +402,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 11010d35bacd604b9d2d68e28c0a04b2
       Path: Events\Default Work Unit\Enemy\Drone\Drone_death
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 80
+      maxDuration: 1.8954796
+      minDuration: 1.0515832
     - name: Drone_hover_loop
       guid: 6f4bbc168846de489142087dd29c6aec
       id: 851403683
@@ -614,6 +614,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Other
+      guid: 1e34c5395ab1e74ab7b28faee8bfc7f8
+      id: 2376466361
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Other
+        ObjectType: 4
+        guid: 1e34c5395ab1e74ab7b28faee8bfc7f8
+      Path: Events\Default Work Unit\Other
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pause_All
+      guid: 413bcbaa65129247a77e80707974c6ca
+      id: 3864097025
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Other
+        ObjectType: 4
+        guid: 1e34c5395ab1e74ab7b28faee8bfc7f8
+      - ElementName: Pause_All
+        ObjectType: 3
+        guid: 413bcbaa65129247a77e80707974c6ca
+      Path: Events\Default Work Unit\Other\Pause_All
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Boom
       guid: f889816ca2c26c4b8d5d02b9907fdd5e
       id: 1357519519
@@ -907,6 +944,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.51423156
       minDuration: 0.24657631
+    - name: Play_Robot_loop
+      guid: f79da6b66dbb1b4f9e5b75f49cb6f0bd
+      id: 2815934519
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 269eb7813bc4a9409cebc59ed16d2d4b
+      - ElementName: Play_Robot_loop
+        ObjectType: 3
+        guid: f79da6b66dbb1b4f9e5b75f49cb6f0bd
+      Path: Events\Default Work Unit\Enemy\Play_Robot_loop
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Robot_talk
+      guid: 25be077660001242845d839ad62c5737
+      id: 1003153599
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Play_Robot_talk
+        ObjectType: 3
+        guid: 25be077660001242845d839ad62c5737
+      Path: Events\Default Work Unit\Play_Robot_talk
+      maxAttenuation: 80
+      maxDuration: 2.1189263
+      minDuration: 1.7817974
     - name: Play_Screenshot
       guid: a6edcf4382fd5b459ec6ec2fdd76291d
       id: 2183894550
@@ -1007,6 +1081,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.62239045
       minDuration: 0.55448675
+    - name: Resume_All
+      guid: a6ba48b1a0951c40bbba9dec42936b90
+      id: 3679762312
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2fb8941b4aa806499c8e947f47d0e7a8
+      - ElementName: Other
+        ObjectType: 4
+        guid: 1e34c5395ab1e74ab7b28faee8bfc7f8
+      - ElementName: Resume_All
+        ObjectType: 3
+        guid: a6ba48b1a0951c40bbba9dec42936b90
+      Path: Events\Default Work Unit\Other\Resume_All
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Set_Game_Parameter_Player_Health
       guid: df9ed62fdc78774fb55d127f4167d7da
       id: 1291792009
@@ -1214,7 +1308,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 312d4355cd6db443a8f51e2fc767a94f
     GuidInternal: 
-    m_lastTime: -8584890680844070896
+    m_lastTime: -8584889211614485560
     List:
     - name: IsPlaying
       guid: 6df689226358e140bd29b38be02c957c
@@ -1351,7 +1445,7 @@ MonoBehaviour:
         guid: f2d814965bf9014091438bb5ffc77746
       Path: Triggers\Default Work Unit\Enemy_died
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000e000000190000001b0000001c0000001d0000001f000000200000002100000022000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000000e000000190000001b0000001c0000001d0000001e0000001f00000020000000210000002200000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

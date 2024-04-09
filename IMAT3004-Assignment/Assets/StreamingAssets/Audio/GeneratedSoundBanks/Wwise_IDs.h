@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID ENEMY_DAMAGE_1 = 2405707301U;
         static const AkUniqueID ENEMY_SHOT = 3598801546U;
         static const AkUniqueID JETPACK = 2680315389U;
+        static const AkUniqueID PAUSE_ALL = 3864097025U;
         static const AkUniqueID PLAY_AMBIENT = 1562304622U;
         static const AkUniqueID PLAY_BOOM = 1357519519U;
         static const AkUniqueID PLAY_CHANGE_WEAPON = 2491293469U;
@@ -34,10 +35,13 @@ namespace AK
         static const AkUniqueID PLAY_JETPACK_PICKUP = 3747290063U;
         static const AkUniqueID PLAY_LANDING = 2323405115U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEP = 1724675634U;
+        static const AkUniqueID PLAY_ROBOT_LOOP = 2815934519U;
+        static const AkUniqueID PLAY_ROBOT_TALK = 1003153599U;
         static const AkUniqueID PLAY_SCREENSHOT = 2183894550U;
         static const AkUniqueID PLAY_TICK_002 = 4138254406U;
         static const AkUniqueID PLAY_WEAPON_CHARGE_LOOP = 2099880966U;
         static const AkUniqueID PLAYER_DAMAGE = 2074073782U;
+        static const AkUniqueID RESUME_ALL = 3679762312U;
         static const AkUniqueID SET_GAME_PARAMETER_PLAYER_HEALTH = 1291792009U;
         static const AkUniqueID WEAPON_CHARGE_BUILDUP = 3108093142U;
         static const AkUniqueID WEAPON_CHARGE_RELEASE = 2723833262U;

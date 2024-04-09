@@ -13,6 +13,7 @@
 					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Enemy" ID="{81B79E26-C43B-40A9-9CEB-C59ED16D2D4B}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Other" ID="{39C5341E-B15A-4AE7-B7B2-8FAEE8BFC7F8}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Env" ID="{7ACC9D45-4AF7-4F60-83B8-98AEE23EF4F0}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{B7438D21-61D1-4FA5-8D2D-0A42E89DA0A6}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

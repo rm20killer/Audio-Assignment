@@ -113,11 +113,14 @@ namespace Unity.FPS.UI
                 Cursor.visible = true;
                 Time.timeScale = 0f;
 
-
+                AkSoundEngine.PostEvent("Pause_All", gameObject);
+                
                 EventSystem.current.SetSelectedGameObject(null);
             }
             else
             {
+                AkSoundEngine.PostEvent("Resume_All", gameObject);
+
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 Time.timeScale = 1f;
