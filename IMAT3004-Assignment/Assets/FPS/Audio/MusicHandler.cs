@@ -83,6 +83,7 @@ public class MusicHandler : MonoBehaviour
         //         enemiesInCombat.RemoveAt(i);
         //     }
         // }
+        //check if any gameobject in the list is missing and remove it if it 
         for (int i = 0; i < currentEnemyCount; i++) 
         {
             if (enemiesInCombat[i] == null)
@@ -91,12 +92,12 @@ public class MusicHandler : MonoBehaviour
                 {
                     enemiesInCombat[j] = enemiesInCombat[j + 1];
                 }
-                enemiesInCombat[currentEnemyCount - 1] = null; // Clear last slot
+                enemiesInCombat[currentEnemyCount - 1] = null; 
                 currentEnemyCount--;
             }
         }
         //if there are enemies in combat play combat music
-        if (enemiesInCombat.Length > 0)
+        if (currentEnemyCount > 0)
         {
             //if the current music state is not combat, play combat music
             if (!combatState)
@@ -124,7 +125,7 @@ public class MusicHandler : MonoBehaviour
     /// </summary>
     void PlayExploreMusic()
     {
-        if (enemiesInCombat.Length > 0)
+        if (currentEnemyCount > 0)
         {
             return;
         }

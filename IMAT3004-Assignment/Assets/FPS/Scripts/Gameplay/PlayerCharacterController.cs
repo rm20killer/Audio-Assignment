@@ -337,7 +337,7 @@ namespace Unity.FPS.Gameplay
 
                             // play sound
                             // AudioSource.PlayOneShot(JumpSfx);
-
+                            AkSoundEngine.PostEvent("Play_Jump", this.gameObject);
                             // remember last time we jumped because we need to prevent snapping to ground for a short time
                             m_LastTimeJumped = Time.time;
                             HasJumpedThisFrame = true;

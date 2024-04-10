@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{38562ADB-19B5-1DE3-8F19-33B133D6C12B}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{DD57D148-946E-8FDD-D0FC-1E15EB3D0554}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
@@ -91,7 +91,7 @@
 				</File>
 				<File Id="478980641" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>explosion-01.wav</ShortName>
-					<CachePath>SFX/explosion-01_E1890E16.wem</CachePath>
+					<CachePath>SFX/explosion-01_6C8B0D7E.wem</CachePath>
 				</File>
 				<File Id="510544665" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>impactPlate_heavy_002.wav</ShortName>
@@ -104,6 +104,10 @@
 				<File Id="549236246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
 					<CachePath>SFX/Weapon_shots_E5904475.wem</CachePath>
+				</File>
+				<File Id="549596958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump.wav</ShortName>
+					<CachePath>SFX/Jump_9F909560.wem</CachePath>
 				</File>
 				<File Id="553755816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
@@ -127,7 +131,7 @@
 				</File>
 				<File Id="683638023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mixkit-quick-bass-switch-2301.wav</ShortName>
-					<CachePath>SFX/mixkit-quick-bass-switch-2301_17EA65C2.wem</CachePath>
+					<CachePath>SFX/mixkit-quick-bass-switch-2301_D5A8ED2B.wem</CachePath>
 				</File>
 				<File Id="711459102" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire_1.wav</ShortName>
@@ -281,6 +285,11 @@
 				<Event Id="3747290063" Name="Play_Jetpack_Pickup" DurationType="OneShot" DurationMin="0.49359828" DurationMax="0.58699065">
 					<MediaRefs>
 						<MediaRef Id="877521368"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3689126666" Name="Play_Jump" DurationType="OneShot" DurationMin="3.488" DurationMax="3.488">
+					<MediaRefs>
+						<MediaRef Id="549596958"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2323405115" Name="Play_Landing" DurationType="OneShot" DurationMin="0.18595743" DurationMax="0.34871155">
@@ -597,5 +606,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{846BB3EE-99F6-7A7D-49F8-6995F3B6152D}</FileHash>
+	<FileHash>{9BFA4C3A-941B-D842-9444-6F90AB0B9318}</FileHash>
 </SoundBanksInfo>

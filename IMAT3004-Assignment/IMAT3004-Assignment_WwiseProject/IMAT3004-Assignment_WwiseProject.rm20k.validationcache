@@ -32,7 +32,7 @@
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1712538801" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\States\Default Work Unit.wwu" DateLow="1708612007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1708612007" DateHigh="0"/>
-	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1712589765" DateHigh="0"/>
+	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1712694555" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Queries\Factory Queries.wwu" DateLow="1706186718" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1708612007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1706186718" DateHigh="0"/>
@@ -45,9 +45,9 @@
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1712527035" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Interactive Music Hierarchy\Background ambient.wwu" DateLow="1712533140" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\IMAT3004-Assignment_WwiseProject.wproj" DateLow="1708612114" DateHigh="0"/>
-	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\IMAT3004-Assignment_WwiseProject.rm20k.wsettings" DateLow="1712682168" DateHigh="0"/>
-	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1712538801" DateHigh="0"/>
-	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Events\Default Work Unit.wwu" DateLow="1712585061" DateHigh="0"/>
+	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\IMAT3004-Assignment_WwiseProject.rm20k.wsettings" DateLow="1712705971" DateHigh="0"/>
+	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1712685724" DateHigh="0"/>
+	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Events\Default Work Unit.wwu" DateLow="1712705969" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Events\Background.wwu" DateLow="1712590341" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Effects\Factory Effects.wwu" DateLow="1712537494" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1708612007" DateHigh="0"/>
@@ -57,5 +57,5 @@
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1708612180" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1708612007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1712417784" DateHigh="0"/>
-	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1712538308" DateHigh="0"/>
+	<ValidationCacheItem File="D:\UNi\audio\Audio-Assignment\IMAT3004-Assignment\IMAT3004-Assignment_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1712702932" DateHigh="0"/>
 </ValidationCache>

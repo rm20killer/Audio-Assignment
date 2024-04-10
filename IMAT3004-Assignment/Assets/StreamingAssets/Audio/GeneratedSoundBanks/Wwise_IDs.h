@@ -33,6 +33,7 @@ namespace AK
         static const AkUniqueID PLAY_IMPACTONMETAL = 3840215476U;
         static const AkUniqueID PLAY_ITEM_PICKUP = 2652605998U;
         static const AkUniqueID PLAY_JETPACK_PICKUP = 3747290063U;
+        static const AkUniqueID PLAY_JUMP = 3689126666U;
         static const AkUniqueID PLAY_LANDING = 2323405115U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEP = 1724675634U;
         static const AkUniqueID PLAY_ROBOT_LOOP = 2815934519U;
