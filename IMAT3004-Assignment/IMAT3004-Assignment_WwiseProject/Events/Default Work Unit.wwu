@@ -285,6 +285,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Jump" ID="{816404E8-76F9-4B10-81FD-9D7F8EFCF6EB}">
+							<ChildrenList>
+								<Action Name="" ID="{DE221C55-18DB-4589-B4E6-472280592C78}" ShortID="478691678">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{AC1E7FF1-DE25-46B6-A6E6-5C0C88899862}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{8D73E353-4C0D-4F01-BBD3-DE2EB78561E0}" ShortID="177888207">

@@ -21,6 +21,13 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="UI" ID="{AAD74908-D41E-4F5D-9F4A-D2C31AD54BBE}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>10000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="UI" ID="{F4781F16-3CDB-4DCB-B72B-53C68ED513AE}" WorkUnitID="{11A82694-F96D-46FA-8BA1-512A12653637}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI" ID="{8D73E353-4C0D-4F01-BBD3-DE2EB78561E0}" WorkUnitID="{1B94B82F-A84A-4906-9C8E-947F47D0E7A8}" Origin="Manual" Filter="7"/>
@@ -29,6 +36,13 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Music" ID="{1578F4F8-1090-4E82-8D35-749DE0ABE505}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>50000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Explore" ID="{167F5426-AAB5-4090-886B-B172116146B2}" WorkUnitID="{716CB1D9-96AE-44DF-8772-E9AE65B0B614}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambient" ID="{E19A08B0-8031-42F6-90C6-33DB7B9DA019}" WorkUnitID="{716CB1D9-96AE-44DF-8772-E9AE65B0B614}" Origin="Manual" Filter="7"/>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{DD57D148-946E-8FDD-D0FC-1E15EB3D0554}">
+		<SoundBank Id="702482391" Type="User" Language="SFX" Hash="{40B4F101-EA37-2EB3-8299-46CD39F8E735}">
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
 			<Media>
@@ -107,7 +107,7 @@
 				</File>
 				<File Id="549596958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump.wav</ShortName>
-					<CachePath>SFX/Jump_9F909560.wem</CachePath>
+					<CachePath>SFX/Jump_5FA7B052.wem</CachePath>
 				</File>
 				<File Id="553755816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weapon_shots.wav</ShortName>
@@ -196,7 +196,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="3879926930" Name="Drone_death" MaxAttenuation="80" DurationType="OneShot" DurationMin="1.0515832" DurationMax="1.8954796">
+				<Event Id="3879926930" Name="Drone_death" MaxAttenuation="150" DurationType="OneShot" DurationMin="1.0515832" DurationMax="1.8954796">
 					<MediaRefs>
 						<MediaRef Id="478980641"/>
 					</MediaRefs>
@@ -287,7 +287,7 @@
 						<MediaRef Id="877521368"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3689126666" Name="Play_Jump" DurationType="OneShot" DurationMin="3.488" DurationMax="3.488">
+				<Event Id="3689126666" Name="Play_Jump" DurationType="OneShot" DurationMin="0.2965345" DurationMax="0.37361008">
 					<MediaRefs>
 						<MediaRef Id="549596958"/>
 					</MediaRefs>
@@ -446,7 +446,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1551306167" Type="User" Language="SFX" Hash="{FE0EAF70-E6B1-7463-27AE-58FAD170862C}">
+		<SoundBank Id="1551306167" Type="User" Language="SFX" Hash="{5738C555-9322-85AA-3A88-0939BE551FF4}">
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
 			<Media>
@@ -482,7 +482,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{616864F6-1BEB-C39A-B1B5-5FD091A9FA4E}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{B37239D6-722F-36AA-F6D0-F7C66429F84C}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -606,5 +606,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9BFA4C3A-941B-D842-9444-6F90AB0B9318}</FileHash>
+	<FileHash>{AF851AAE-9E23-9190-BA78-27BC10DE0889}</FileHash>
 </SoundBanksInfo>

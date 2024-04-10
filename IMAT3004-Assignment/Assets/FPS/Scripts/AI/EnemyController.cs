@@ -253,7 +253,7 @@ namespace Unity.FPS.AI
         void OnDetectedTarget()
         {
             onDetectedTarget.Invoke();
-            
+            AkSoundEngine.PostEvent("Play_Robot_talk", gameObject);
             // Set the eye default color and property block if the eye renderer is set
             if (m_EyeRendererData.Renderer != null)
             {
@@ -276,8 +276,6 @@ namespace Unity.FPS.AI
                 }
                 
             }
-            
-            AkSoundEngine.PostEvent("Play_Robot_talk", gameObject);
         }
 
         public void OrientTowards(Vector3 lookPosition)

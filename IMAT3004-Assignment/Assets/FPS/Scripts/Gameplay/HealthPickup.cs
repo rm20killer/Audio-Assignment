@@ -10,6 +10,8 @@ namespace Unity.FPS.Gameplay
 
         protected override void OnPicked(PlayerCharacterController player)
         {
+            AkSoundEngine.PostEvent("Play_Item_PickUp", gameObject);
+
             Health playerHealth = player.GetComponent<Health>();
             if (playerHealth && playerHealth.CanPickup())
             {
