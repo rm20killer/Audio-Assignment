@@ -3882,7 +3882,7 @@
 					<ChildrenList>
 						<MusicSegment Name="Apollo" ID="{EA140CF9-7D72-447B-9452-EDCDA0D1500E}" ShortID="39241393">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="27428.5714285714"/>
+								<Property Name="EndPosition" Type="Real64" Value="6626.23352556197"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4030,7 +4030,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>-0</XPos>
+																								<XPos>0</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -4049,7 +4049,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>-0</XPos>
+																								<XPos>0</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -4068,7 +4068,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>-0</XPos>
+																								<XPos>0</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
